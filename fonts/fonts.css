@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Futura PT';
+    src:
+        url("/fonts/FuturaPT/futurapt-medium-russian.woff2") format('woff2'),
+        url("/fonts/FuturaPT/futurapt-medium-russian.woff") format('woff'),
+        url("/fonts/FuturaPT/futurapt-medium-russian.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src:
+        url("/fonts/FuturaPT/futurapt-medium-english.woff2") format('woff2'),
+        url("/fonts/FuturaPT/futurapt-medium-english.woff") format('woff'),
+        url("/fonts/FuturaPT/futurapt-medium-english.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src:
+        url("/fonts/FuturaPT/futurapt-book-russian.woff2") format('woff2'),
+        url("/fonts/FuturaPT/futurapt-book-russian.woff") format('woff'),
+        url("/fonts/FuturaPT/futurapt-book-russian.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src:
+        url("/fonts/FuturaPT/futurapt-book-english.woff2") format('woff2'),
+        url("/fonts/FuturaPT/futurapt-book-english.woff") format('woff'),
+        url("/fonts/FuturaPT/futurapt-book-english.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src:
+        url("/fonts/FuturaPT/futurapt-light-russian.woff2") format('woff2'),
+        url("/fonts/FuturaPT/futurapt-light-russian.woff") format('woff'),
+        url("/fonts/FuturaPT/futurapt-light-russian.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src:
+        url("/fonts/FuturaPT/futurapt-light-english.woff2") format('woff2'),
+        url("/fonts/FuturaPT/futurapt-light-english.woff") format('woff'),
+        url("/fonts/FuturaPT/futurapt-light-english.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src:
+        url("/fonts/FuturaPT/futurapt-bold-russian.woff2") format('woff2'),
+        url("/fonts/FuturaPT/futurapt-bold-russian.woff") format('woff'),
+        url("/fonts/FuturaPT/futurapt-bold-russian.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src:
+        url("/fonts/FuturaPT/futurapt-bold-english.woff2") format('woff2'),
+        url("/fonts/FuturaPT/futurapt-bold-english.woff") format('woff'),
+        url("/fonts/FuturaPT/futurapt-bold-english.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url("/fonts/FuturaPT/FuturaPT-Heavy.eot");
+    src: url("/fonts/FuturaPT/FuturaPT-Heavy.eot") format('embedded-opentype'), url("/fonts/FuturaPT/FuturaPT-Heavy.woff") format('woff'), url("/fonts/FuturaPT/FuturaPT-Heavy.ttf") format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url("/fonts/FuturaPT/FuturaPT-MediumObl.eot");
+    src: url("/fonts/FuturaPT/FuturaPT-MediumObl.eot") format('embedded-opentype'), url("/fonts/FuturaPT/FuturaPT-MediumObl.woff") format('woff'), url("/fonts/FuturaPT/FuturaPT-MediumObl.ttf") format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url("/fonts/FuturaPT/FuturaPT-LightObl.eot");
+    src: url("/fonts/FuturaPT/FuturaPT-LightObl.eot") format('embedded-opentype'), url("/fonts/FuturaPT/FuturaPT-LightObl.woff") format('woff'), url("/fonts/FuturaPT/FuturaPT-LightObl.ttf") format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url("/fonts/FuturaPT/FuturaPT-BookObl.eot");
+    src: url("/fonts/FuturaPT/FuturaPT-BookObl.eot") format('embedded-opentype'), url("/fonts/FuturaPT/FuturaPT-BookObl.woff") format('woff'), url("/fonts/FuturaPT/FuturaPT-BookObl.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url("/fonts/FuturaPT/FuturaPT-BoldObl.eot");
+    src: url("/fonts/FuturaPT/FuturaPT-BoldObl.eot") format('embedded-opentype'), url("/fonts/FuturaPT/FuturaPT-BoldObl.woff") format('woff'), url("/fonts/FuturaPT/FuturaPT-BoldObl.ttf") format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url("/fonts/FuturaPT/FuturaPT-DemiObl.eot");
+    src: url("/fonts/FuturaPT/FuturaPT-DemiObl.eot") format('embedded-opentype'), url("/fonts/FuturaPT/FuturaPT-DemiObl.woff") format('woff'), url("/fonts/FuturaPT/FuturaPT-DemiObl.ttf") format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url("/fonts/FuturaPT/FuturaPT-Demi.eot");
+    src: url("/fonts/FuturaPT/FuturaPT-Demi.eot") format('embedded-opentype'), url("/fonts/FuturaPT/FuturaPT-Demi.woff") format('woff'), url("/fonts/FuturaPT/FuturaPT-Demi.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url("/fonts/FuturaPT/FuturaPT-HeavyObl.eot");
+    src: url("/fonts/FuturaPT/FuturaPT-HeavyObl.eot") format('embedded-opentype'), url("/fonts/FuturaPT/FuturaPT-HeavyObl.woff") format('woff'), url("/fonts/FuturaPT/FuturaPT-HeavyObl.ttf") format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* calvino */
+
+
+@font-face {
+    font-family: 'Calvino';
+    src: url("/fonts/Calvino/CalvinoRegular.ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calvino';
+    src: url("/fonts/Calvino/CalvinoBook.ttf");
+    font-weight: 350;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calvino';
+    src: url("/fonts/Calvino/CalvinoExtrabold.ttf");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calvino';
+    src: url("/fonts/Calvino/CalvinoLight.ttf");
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    font-display: swap;
+}
