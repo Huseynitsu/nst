@@ -70,3 +70,15 @@ $(document).ready(function () {
         }
     });
 });
+
+const wrapper = document.querySelector('.reviews-wrapper');
+
+function randomizeAnimation() {
+    const duration = 15 + Math.random() * 15; // 15–30 saniyə arası
+    const direction = Math.random() > 0.5 ? 'normal' : 'reverse';
+    wrapper.style.animation = `scrollReviews ${duration}s linear infinite ${direction}`;
+}
+
+// Hər 20 saniyədə bir təsadüfi sürət və istiqamət dəyişsin
+setInterval(randomizeAnimation, 20000);
+randomizeAnimation();
