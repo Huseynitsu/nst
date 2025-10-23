@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="icon" type="image/x-icon" href="/img/thyfavicon.png">
+    <title>НСТ — Недвижимость с торгов</title>
+    <link rel="icon" type="image/x-icon" href="/img/nstfavicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -23,6 +23,60 @@
 </head>
 
 <body>
+
+    <div class="eye-modal" id="appointmentModal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="eye-modal__backdrop"></div>
+
+        <div class="eye-modal__dialog" role="document">
+            <button class="eye-modal__close" type="button" aria-label="Закрыть">
+                <span></span>
+            </button>
+
+            <div class="eye-modal__body">
+                <div class="modal_both">
+                    <div class="modal_left">
+                        <h2>НАПИШИТЕ НАМ</h2>
+                        <p>
+                            Мы не “менеджеры”, не “посредники” — мы ваши
+                            **официальные представители на торгах**.
+                            Вы — заказчик. Мы — исполнитель. Ваша задача — получить имущество
+                            дешевле рынка. Наша — сделать это без единой ошибки.
+                        </p>
+
+                        <!-- <div class="contact-buttons">
+                            <a href="https://t.me/YourTelegramUsername" target="_blank" class="modalbtn telegram">
+                                НАПИСАТЬ В TELEGRAM <i class="fa-brands fa-telegram-plane"></i>
+                            </a>
+
+                            <a href="https://wa.me/YourPhoneNumber" target="_blank" class="modalbtn whatsapp">
+                                НАПИСАТЬ В WHATSAPP <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div> -->
+                        <form class="eye-form" id="eyeForm">
+                            <div class="eye-field">
+                                <label>Ваше имя и фамилия</label>
+                                <input type="text" name="name" placeholder="Джейхун Рзаев" required>
+                            </div>
+
+                            <div class="eye-field">
+                                <label>Контактный номер</label>
+                                <input type="tel" name="phone" placeholder="+994 xx xxx xx xx" required>
+                            </div>
+
+                            <button class="eye-btn" type="submit">
+                                <span class="eye-btn__glow"></span>
+                                Отправить запрос
+                            </button>
+                        </form>
+                    </div>
+                    <div class="modal_right">
+                        <img src="/img/statue-of-lady-justice-holding-scales-and-sword-against-a-transparent-background-representing-fairness-and-law-statue-of-lady-of-justice-on-transparent-background-free-png.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="sticky-icon">
         <a href="#" class="Instagram"><i class="fa-brands fa-telegram"></i> Telegram </a>
@@ -42,11 +96,19 @@
                     </h1>
                 </div>
                 <div class="header__right">
-                    <div data-office-switch="main" data-testid="navbar.main_address"
-                        class="header__address office-switchable active">
-                        Пресненская набережная, 6с2,<br>
-                        башня «Империя»,<br>
-                        3-й подъезд, офис 4315
+                    <!-- Hüquqi ünvan -->
+                    <div class="header__address office-switchable active" data-office-switch="main"
+                        data-testid="navbar.main_address">
+                        <i class="fa-solid fa-building"></i>
+                        <strong>Юридический адрес</strong><br>
+                        125315, г. Москва, Большой Коптевский проезд, д. 3 стр 2, помещ. 101
+                    </div>
+                    <!-- Faktiki / Poçt ünvanı -->
+                    <div class="header__address office-switchable active" data-office-switch="perm"
+                        data-testid="navbar.perm_address">
+                        <i class="fa-solid fa-envelope"></i>
+                        <strong>Фактический адрес / Почтовый адрес</strong><br>
+                        614007, г. Пермь, ул. 1-я Красноармейская, д. 3, офис 5
                     </div>
                     <div data-office-switch="outtown" data-testid="navbar.country_address"
                         class="header__address office-switchable">
@@ -72,23 +134,16 @@
                                     d="M1.9459 7.48688L13.1953 2.82381C14.3058 2.33807 18.0717 0.783715 18.0717 0.783715C18.0717 0.783715 19.8098 0.103683 19.665 1.75519C19.6167 2.43522 19.2304 4.81533 18.8442 7.38973L17.6372 15.0158C17.6372 15.0158 17.5406 16.133 16.7198 16.3273C15.8991 16.5216 14.5472 15.6473 14.3058 15.453C14.1127 15.3072 10.6847 13.1214 9.42943 12.0528C9.09147 11.7614 8.70522 11.1785 9.47771 10.4984C11.2158 8.89552 13.2919 6.904 14.5472 5.64108C15.1266 5.0582 15.7059 3.69813 13.2919 5.34964L6.4843 9.96414C6.4843 9.96414 5.71181 10.4499 4.26338 10.0127C2.81496 9.57555 1.12513 8.99267 1.12513 8.99267C1.12513 8.99267 -0.0336084 8.26406 1.9459 7.48688Z"
                                     fill="white"></path>
                             </svg></a></div>
-                    <div class="header__phone-block">
-                        <div class="header__switcher"><button type="button" data-office-switch="outtown"
-                                data-testid="navbar.country_button" class="header__switcher-item">
-                                Загородный
-                            </button> <button type="button" data-office-switch="main" data-testid="navbar.main_button"
-                                class="header__switcher-item active">
-                                Головной
-                            </button></div> <a href="tel:+79194408885" data-metric-goal="zvonok-b-h"
+                    <div class="header__phone-block"> <a href="tel:+79194408885" data-metric-goal="zvonok-b-h"
                             data-metric-goal-category="callback" data-office-switch="main" data-popup="callback"
                             data-testid="navbar.main_phone"
                             class="header__phone prevent-default-desktop active office-switchable">
-                            +7 919 440-88-85
+                            +79958622313
                         </a> <a href="tel:+79194408885" data-metric-goal="zvonok-b-h"
                             data-metric-goal-category="callback" data-office-switch="outtown" data-popup="callback"
                             data-testid="navbar.country_phone"
                             class="header__phone prevent-default-desktop office-switchable">
-                            +7 919 440-88-85
+                            +79958622313
                         </a>
                         <div class="header__phone-label">
                             Сейчас работаем
@@ -125,7 +180,7 @@
                                 </svg>
                             </a></li>
                     </ul>
-                    <a href="#" class="price-offer" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+                    <a href="#" class="price-offer randevu">
                         <span>Получить бесплатную консультацию</span>
                     </a>
                 </div>
@@ -166,7 +221,7 @@
                                             class="first-screen__title-mob">
                                             ОФИЦИАЛЬНЫЙ АГЕНТ НА ТОРГАХ ПО БАНКРОТСТВУ И ГОСУДАРСТВЕННОМУ ИМУЩЕСТВУ
                                         </span></div>
-                                    <a class="themebtn" href="#">
+                                    <a class="themebtn randevu" href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
                                             <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
                                         </svg>
@@ -218,7 +273,7 @@
                                             class="first-screen__title-mob">
                                             Lorem, ipsum dolor.
                                         </span></div>
-                                    <a href="#">
+                                    <a class="randevu" href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
                                             <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
                                         </svg>
@@ -270,7 +325,7 @@
                                             class="first-screen__title-mob">
                                             Lorem, ipsum.
                                         </span></div>
-                                    <a href="#">
+                                    <a class="randevu" href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
                                             <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
                                         </svg>
@@ -302,7 +357,7 @@
                     <a href="https://whitewill.ru/developments"
                         data-testid="tile_categories.moscow_new_real_estate_link"
                         data-test-group="tile_categories.buttons"
-                        class="tile-categories__tile-types__item tile-categories__tile-types__item_full-mob">
+                        class="tile-categories__tile-types__item tile-categories__tile-types__item_full-mob randevu">
                         <div class="tile-categories__tile-types__title">Квартиры и недвижимость</div>
                         <div class="tile-categories__tile-types__item-background"><img loading="lazy"
                                 src="/img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=280" srcset="
@@ -330,7 +385,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg1m.png?width=18
                         </div>
                     </a> <a href="https://whitewill.ru/buy"
                         data-testid="tile_categories.moscow_secondary_real_estate_link"
-                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item">
+                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item randevu">
                         <div class="tile-categories__tile-types__title">Транспорт и спецтехника</div>
                         <div class="tile-categories__tile-types__item-background"><img loading="lazy"
                                 src="/img/unnamed-removebg-preview.png?width=280" srcset="
@@ -360,7 +415,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg2m.png?width=18
                         </div>
                     </a> <a href="https://whitewill.ru/rent"
                         data-testid="tile_categories.moscow_rental_real_estate_link"
-                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item">
+                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item randevu">
                         <div class="tile-categories__tile-types__title">Готовый бизнес</div>
                         <div class="tile-categories__tile-types__item-background"><img loading="lazy"
                                 src="/img/faced-navigation-427-removebg-preview.png?width=280" srcset="
@@ -393,7 +448,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg3m.png?width=18
         </div>
         <div class="lead-cards__wrapp container">
             <div class="lead-cards">
-                <div data-popup="callback-sale" class="lead-card">
+                <div data-popup="callback-sale" class="lead-card randevu">
                     <div class="lead-card__title"><span>Государственное и муниципальное имущество</span></div> <img
                         loading="lazy" src="/img/noroot__2_-removebg-preview.png?width=280" srcset="
 /img/noroot__2_-removebg-preview.png?width=832 832w,
@@ -413,7 +468,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-sale-mob.png?w
                         sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 444px, (max-width: 1620px) 702px, 832px"
                         alt="sell" class="is-mobile">
                 </div>
-                <div data-popup="callback-rent" class="lead-card">
+                <div data-popup="callback-rent" class="lead-card randevu">
                     <div class="lead-card__title"><span>Арестованное имущество</span></div> <img loading="lazy"
                         src="/img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=280" srcset="
 /img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=832 832w,
@@ -435,6 +490,122 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 </div>
             </div>
         </div>
+        <section id="trading-risk" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase main-title mb-3">
+                        ВЫ ДУМАЕТЕ, ЧТО ТОРГИ — ЭТО СЛОЖНО, РИСКОВАННО И ДОЛГО?
+                    </h2>
+                    <p class="lead sub-title mb-5">
+                        ВЫ ПРАВЫ! Если делать это самому без опыта и знаний системы:
+                    </p>
+                </div>
+
+
+                <div class="premium-block">
+                    <div class="premium-line">
+                        <span class="premium-bullet">01</span>
+                        <div class="premium-content">
+                            <h5>Раздробленность площадок</h5>
+                            <p>Более 100 торговых платформ. Каждая — со своими правилами, интерфейсом и требованиями к
+                                аккредитации.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="premium-line">
+                        <span class="premium-bullet">02</span>
+                        <div class="premium-content">
+                            <h5>Отказ в допуске из-за ошибки</h5>
+                            <p>Одна опечатка в документах → аккредитация не пройдена → вы вне торгов, а лот уходит
+                                конкуренту.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="premium-line">
+                        <span class="premium-bullet">03</span>
+                        <div class="premium-content">
+                            <h5>Юридические риски</h5>
+                            <p>Скрытые аресты, долги, обременения. Купите имущество, которое нельзя зарегистрировать →
+                                потеря задатка и инвестиций.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="premium-line">
+                        <span class="premium-bullet">04</span>
+                        <div class="premium-content">
+                            <h5>Потеря выгоды на торгах</h5>
+                            <p>Без стратегии легко переплатить или вовсе упустить объект из-за неопытности.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="premium-line">
+                        <span class="premium-bullet">05</span>
+                        <div class="premium-content">
+                            <h5>Трата времени впустую</h5>
+                            <p>Поиск действительно выгодных лотов требует часов анализа, доступа ко всем площадкам и
+                                опыта.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="premium-line">
+                        <span class="premium-bullet">06</span>
+                        <div class="premium-content">
+                            <h5>Провал на финальном этапе</h5>
+                            <p>Даже если выиграли, можно потерять лот из-за нарушения сроков оплаты, подписания актов
+                                или регистрации.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title">Наши преимущества</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="icon">🌐</div>
+                        <p><strong>Единая точка входа</strong> — вам не нужно разбираться в 100+ площадках. Мы работаем
+                            на всех — и подадим заявку от вашего имени.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">📄</div>
+                        <p><strong>Ноль ошибок в документах</strong> — все заявки будут допущены!</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🔍</div>
+                        <p><strong>Проверка объектов до участия</strong></p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🎯</div>
+                        <p><strong>Стратегия победы</strong> — ставим ставки по алгоритму, согласно опыту: выигрываем по
+                            выгодной для вас цене, не переплачивая.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">⏱️</div>
+                        <p><strong>Экономия времени</strong> — вы не тратите дни на поиск. Мы подбираем лоты под ваш
+                            бюджет и цели.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="icon">🏆</div>
+                        <p><strong>Сопровождение до регистрации</strong> — контролируем каждый срок: оплата, акты,
+                            передача, Росреестр. Никаких “упустил — потерял”.
+                            <br><br><strong>МЫ ДЕЛАЕМ результат</strong> — БОЛЕЕ 300 выигранных лотов. Вы получаете
+                            имущество — мы получаем ваше “спасибо”.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="workflow">
             <h2 class="workflow-title">Наш процесс работы</h2>
 
@@ -486,7 +657,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 <div class="advantage-top" align="center">
                     <div class="container">
                         <div class="advantage-text">
-                            <h2 class="sec_title">Наши дополнительные преимущества:</h2>
+                            <h2 class="sec_title">ПОЧЕМУ МЫ — ВАШИ ЛУЧШИЕ и НАДЕЖНЫЕ АГЕНТЫ НА ТОРГАХ?</h2>
                             <span><strong>НСТ</strong> — это компания, специализирующаяся на реализации квартир,
                                 недвижимости, транспорта, спецтехники и готового бизнеса. Мы работаем с объектами
                                 разного типа — от студий и коттеджей до кафе, магазинов и производств «под ключ». Кроме
@@ -545,7 +716,8 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                     </div>
                     <a href="https://www.youtube.com/watch?v=Y8myZwl871Y&list=RDY8myZwl871Y&start_radio=1&pp=oAcB"
                         data-fancybox="gallery" class="p-0 col-md-5 about-video">
-                        <img src="https://www.americanprogress.org/wp-content/uploads/sites/2/2018/02/GettyImages-903993266.jpg?w=1040" class="video-wrapper" alt="О нас">
+                        <img src="https://www.americanprogress.org/wp-content/uploads/sites/2/2018/02/GettyImages-903993266.jpg?w=1040"
+                            class="video-wrapper" alt="О нас">
                         <div class="mainplay">
                             <div class="play-button play">
                                 <img class="play-black"
@@ -573,7 +745,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                         sed.
                                     </p>
                                 </div>
-                                <a class="themebtn" href="/about/">
+                                <a class="themebtn randevu" href="/about/">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
                                         <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
                                     </svg>
@@ -1030,6 +1202,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 </div>
             </div>
         </section>
+        <div id="map"></div>
     </main>
 
     <footer>
@@ -1043,35 +1216,68 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                 Наша компания предоставляет полный спектр услуг по недвижимости и коммерческим объектам,
                                 обеспечивая профессиональный подход и соответствие всем стандартам.
                             </p>
+                            <!-- Ünvanlar -->
+                            <div class="footer-addresses">
+                                <div class="footer-address">
+                                    <i class="fa-solid fa-building"></i>
+                                    <div>
+                                        <strong>Юридический адрес</strong><br>
+                                        125315, г. Москва, Большой Коптевский проезд, д. 3 стр 2, помещ. 101
+                                    </div>
+                                </div>
+
+                                <div class="footer-address">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div>
+                                        <strong>Фактический адрес / Почтовый адрес</strong><br>
+                                        614007, г. Пермь, ул. 1-я Красноармейская, д. 3, офис 5
+                                    </div>
+                                </div>
+
+                                <div class="footer-address">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div>
+                                        <strong>Электронная почта</strong><br>
+                                        <a href="mailto:dom.invest01@ya.ru">dom.invest01@ya.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Bank məlumatları -->
+                            <div class="footer-bank">
+                                <h4><i class="fa-solid fa-landmark"></i> Банковские реквизиты</h4>
+                                <table class="bank-table">
+                                    <tr>
+                                        <td>БИК</td>
+                                        <td>044525104</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Наименование банка</td>
+                                        <td>ООО «Банк Точка»</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ИНН банка</td>
+                                        <td>9721194461</td>
+                                    </tr>
+                                    <tr>
+                                        <td>КПП банка</td>
+                                        <td>997950001</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Расчетный счет</td>
+                                        <td>40702810120000213585</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Корреспондентский счет</td>
+                                        <td>30101810745374525104</td>
+                                    </tr>
+                                </table>
+                            </div>
                             <div class="rv-1-socials">
                                 <a target="_blank" href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
-                                        viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
-                                        xml:space="preserve" class="">
-                                        <g>
-                                            <circle cx="12" cy="12" r="12" fill="#039be5" opacity="1"
-                                                data-original="#039be5" class=""></circle>
-                                            <path fill="#ffffff"
-                                                d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
-                                                opacity="1" data-original="#ffffff" class=""></path>
-                                        </g>
-                                    </svg>
+                                    <i class="fa-brands fa-telegram"></i>
                                 </a>
                                 <a target="_blank" href="https://facebook.com/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
-                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
-                                        xml:space="preserve" class="">
-                                        <g>
-                                            <path
-                                                d="M256.064 0h-.128C114.784 0 0 114.816 0 256c0 56 18.048 107.904 48.736 150.048l-31.904 95.104 98.4-31.456C155.712 496.512 204 512 256.064 512 397.216 512 512 397.152 512 256S397.216 0 256.064 0z"
-                                                style="" fill="#4caf50" data-original="#4caf50" class=""></path>
-                                            <path
-                                                d="M405.024 361.504c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.616-127.456-112.576-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016.16 8.576.288 7.52.32 11.296.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744-3.776 4.352-7.36 7.68-11.136 12.352-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
-                                                style="" fill="#fafafa" data-original="#fafafa"></path>
-                                        </g>
-                                    </svg>
+                                    <i class="fa-brands fa-whatsapp"></i>
                                 </a>
                             </div>
                         </div>
@@ -1157,11 +1363,35 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
     <script src="/js/script.js"></script>
     <script>
         Fancybox.bind("[data-fancybox]", {
             // Your custom options
         });
+    </script>
+
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [58.003359, 56.266741],
+                zoom: 15,
+            });
+
+            myMap.geoObjects.add(new ymaps.Placemark([58.003359, 56.266741], {}, {
+                iconLayout: "default#image",
+                iconImageHref: "/img/marker.png",
+                iconImageSize: [50, 50],
+                iconImageOffset: [-50, -100]
+            }))
+
+            myMap.behaviors.disable("scrollZoom");
+
+        }
+
+
     </script>
 </body>
 
