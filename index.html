@@ -759,6 +759,17 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 </div>
             </div>
         </section>
+        <!-- SPECIAL OFFER COUNTDOWN SECTION -->
+        <section class="special-offer-area">
+            <div class="special-offer-container">
+                <h2 class="special-offer-title">🎁 СПЕЦПРЕДЛОЖЕНИЕ ДО <span id="countdown-date">[DATE]</span>:</h2>
+                <p class="special-offer-text">
+                    **Скидка 50% на услуги агента при заказе до <span id="countdown-date-2">[DATE]</span>!**<br>
+                    Добавить счетчик: осталось <span id="countdown-timer">00д 00ч 00м 00с</span> до конца акции!
+                </p>
+                <a class="cta-button themebtn randevu" href="#">Забронировать скидку 50%</a>
+            </div>
+        </section>
         <section id="about" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="row">
@@ -1427,7 +1438,6 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
         });
     </script>
     <script>
-
         const pricingSwiper = new Swiper('.pricing-swiper', {
             slidesPerView: 3,       // Desktopda 3 slide
             spaceBetween: 20,
@@ -1445,6 +1455,30 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 },
             },
         });
+
+        // Set countdown target date
+        const countdownTarget = new Date("January 1, 2026 00:00:00").getTime();
+
+        const countdownTimer = document.getElementById('countdown-timer');
+        const countdownDateSpans = document.querySelectorAll('#countdown-date, #countdown-date-2');
+
+        // Set visible countdown date
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const targetDateString = new Date(countdownTarget).toLocaleDateString('ru-RU', options);
+        countdownDateSpans.forEach(span => span.textContent = targetDateString);
+
+        // Update countdown every second
+        setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownTarget - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdownTimer.textContent = `${days}д ${hours}ч ${minutes}м ${seconds}с`;
+        }, 1000);
     </script>
     <script type="text/javascript">
         ymaps.ready(init);
