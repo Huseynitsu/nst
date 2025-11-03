@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
-    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="/font/stylesheet.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/60363fc8c5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
@@ -84,125 +84,199 @@
     </div>
     <!--End Sticky Icon-->
 
-    <header class="header header__wide">
-        <div class="container">
-            <div class="header__container">
-                <div class="header__left">
-                    <a href="#" data-testid="navbar.logo_link" class="header__logo">
-                        <img src="/img/nstlogoremove.png" alt="logo">
-                    </a>
-                    <h1 class="header__label">
-                        Агентство элитной недвижимости
-                    </h1>
-                </div>
-                <div class="header__right">
-                    <!-- Hüquqi ünvan -->
-                    <div class="header__address office-switchable active" data-office-switch="main"
-                        data-testid="navbar.main_address">
-                        <i class="fa-solid fa-building"></i>
-                        <strong>Юридический адрес</strong><br>
-                        125315, г. Москва, Большой Коптевский проезд, д. 3 стр 2, помещ. 101
-                    </div>
-                    <!-- Faktiki / Poçt ünvanı -->
-                    <div class="header__address office-switchable active" data-office-switch="perm"
-                        data-testid="navbar.perm_address">
-                        <i class="fa-solid fa-envelope"></i>
-                        <strong>Фактический адрес / Почтовый адрес</strong><br>
-                        614007, г. Пермь, ул. 1-я Красноармейская, д. 3, офис 5
-                    </div>
-                    <div data-office-switch="outtown" data-testid="navbar.country_address"
-                        class="header__address office-switchable">
-                        Московская область,<br>
-                        Рублёво-Успенское шоссе, Усово, 100, ДЦ «Резиденция на Рублёвке», Блок Г
-                    </div>
-                    <div class="header__soc"><a
-                            href="https://messenger-bot.whitewill.ru/web/ccr.php?com=link&amp;client_code=397294339&amp;mt=whatsapp"
-                            data-testid="navbar.whatsapp_link"
-                            class="header__soc-item header__soc-item_whatsapp messenger_link is_whatsapp link"
-                            data-target="whatsapp"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.0582 2.76032C14.2894 0.980826 11.9357 0 9.42877 0C4.26175 0 0.0696364 4.23156 0.0696364 9.41593C0.0696364 11.0693 0.501383 12.6947 1.32309 14.1239L0 19L4.95811 17.6969C6.32299 18.4535 7.86892 18.8459 9.42877 18.8459C14.5819 18.8459 18.7879 14.6143 18.7879 9.42994C18.8018 6.90782 17.8269 4.53982 16.0582 2.76032ZM9.4427 17.2485C8.04997 17.2485 6.67117 16.8702 5.48735 16.1556L5.2088 15.9875L2.27015 16.7721L3.05007 13.8857L2.86902 13.5914C2.08909 12.3444 1.67127 10.9012 1.67127 9.42994C1.67127 5.11431 5.16702 1.61136 9.45662 1.61136C11.5318 1.61136 13.4955 2.42404 14.9579 3.90929C16.4342 5.39454 17.242 7.35619 17.2281 9.44395C17.2141 13.7316 13.7184 17.2485 9.4427 17.2485ZM13.7044 11.3776C13.4677 11.2655 12.3256 10.691 12.1028 10.6069C11.8939 10.5369 11.7407 10.4948 11.5736 10.719C11.4204 10.9572 10.9747 11.4897 10.8354 11.6438C10.6962 11.7979 10.5569 11.826 10.334 11.6999C10.0973 11.5878 9.34521 11.3355 8.45386 10.5369C7.7575 9.90634 7.28397 9.1497 7.15862 8.9115C7.01935 8.6733 7.1447 8.5472 7.25612 8.4351C7.35361 8.33702 7.49288 8.15487 7.6043 8.02876C7.71572 7.88864 7.7575 7.79056 7.84106 7.63643C7.9107 7.4823 7.88284 7.34218 7.82713 7.23009C7.77142 7.11799 7.2979 5.95501 7.10292 5.47861C6.90793 5.01622 6.72688 5.08628 6.57368 5.07227C6.43441 5.05826 6.28121 5.05826 6.12801 5.05826C5.97481 5.05826 5.72411 5.11431 5.50128 5.35251C5.29237 5.59071 4.67957 6.15118 4.67957 7.31416C4.67957 8.47714 5.5152 9.58407 5.62662 9.75221C5.73804 9.90634 7.27004 12.2883 9.62375 13.2972C10.1808 13.5354 10.6126 13.6895 10.9608 13.8016C11.5179 13.9838 12.0332 13.9558 12.4371 13.8997C12.8827 13.8296 13.8159 13.3252 14.0108 12.7788C14.2058 12.2323 14.2058 11.7559 14.1501 11.6578C14.0944 11.5597 13.9412 11.5037 13.7044 11.3776Z"
-                                    fill="white"></path>
-                            </svg></a> <a
-                            href="https://messenger-bot.whitewill.ru/web/ccr.php?com=link&amp;client_code=397294339&amp;mt=telegram"
-                            data-testid="navbar.telegram_link"
-                            class="header__soc-item header__soc-item_telegram messenger_link is_telegram link"
-                            data-target="telegram"><svg width="20" height="17" viewBox="0 0 20 17" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.9459 7.48688L13.1953 2.82381C14.3058 2.33807 18.0717 0.783715 18.0717 0.783715C18.0717 0.783715 19.8098 0.103683 19.665 1.75519C19.6167 2.43522 19.2304 4.81533 18.8442 7.38973L17.6372 15.0158C17.6372 15.0158 17.5406 16.133 16.7198 16.3273C15.8991 16.5216 14.5472 15.6473 14.3058 15.453C14.1127 15.3072 10.6847 13.1214 9.42943 12.0528C9.09147 11.7614 8.70522 11.1785 9.47771 10.4984C11.2158 8.89552 13.2919 6.904 14.5472 5.64108C15.1266 5.0582 15.7059 3.69813 13.2919 5.34964L6.4843 9.96414C6.4843 9.96414 5.71181 10.4499 4.26338 10.0127C2.81496 9.57555 1.12513 8.99267 1.12513 8.99267C1.12513 8.99267 -0.0336084 8.26406 1.9459 7.48688Z"
-                                    fill="white"></path>
-                            </svg></a></div>
-                    <div class="header__phone-block"> <a href="tel:+79194408885" data-metric-goal="zvonok-b-h"
-                            data-metric-goal-category="callback" data-office-switch="main" data-popup="callback"
-                            data-testid="navbar.main_phone"
-                            class="header__phone prevent-default-desktop active office-switchable">
-                            +79958622313
-                        </a> <a href="tel:+79194408885" data-metric-goal="zvonok-b-h"
-                            data-metric-goal-category="callback" data-office-switch="outtown" data-popup="callback"
-                            data-testid="navbar.country_phone"
-                            class="header__phone prevent-default-desktop office-switchable">
-                            +79958622313
-                        </a>
-                        <div class="header__phone-label">
-                            Сейчас работаем
+    <header class="position-fixed w-100 top-0 start-0 z-3 py-4 transition">
+        <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+            <!-- ---------- LOGO + DESKTOP NAV ---------- -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="/">
+                    <img loading="lazy" class="img-fluid" style="width:80px;" src="/img/nstlogoremove.png" alt="Logo"
+                        width="80" height="63" />
+                </a>
+
+                <!-- Desktop menu -->
+                <ul class="d-none d-lg-flex text-white fs-6 gap-3 list-unstyled mb-0">
+                    <li><a href="/car/" class="text-decoration-none text-white">Автопарк</a></li>
+                    <li><a href="/uslovija/" class="text-decoration-none text-white">Условия</a></li>
+                    <li><a href="/sertifikaty/" class="text-decoration-none text-white">Сертификаты</a></li>
+                    <li><a href="/blog/" class="text-decoration-none text-white">Блог</a></li>
+                    <li><a href="/stat-partnerom/" class="text-decoration-none text-white">Стать партнёром</a></li>
+                    <li><a href="/contact/" class="text-decoration-none text-white">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- ---------- DESKTOP TOOLS (currency, socials, phone) ---------- -->
+            <div class="d-none d-lg-flex align-items-center gap-4">
+
+                <!-- Currency dropdown (desktop) -->
+                <div class="position-relative">
+                    <button type="button"
+                        class="themebtn randevu w-100 border p-2 pe-2 d-flex align-items-center justify-content-center bg-dark rounded shadow-sm">
+                        <div class="d-flex align-items-center gap-2 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                                <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                            </svg>
+                            <span class="selectedCurrencyText">Получить бесплатную консультацию</span>
                         </div>
-                    </div>
-                    <ul class="languages">
-                        <li><a href="#" class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
-                                    viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
-                                    class="">
-                                    <g>
-                                        <circle cx="12" cy="12" r="12" fill="#039be5" opacity="1"
-                                            data-original="#039be5" class=""></circle>
-                                        <path fill="#ffffff"
-                                            d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
-                                            opacity="1" data-original="#ffffff" class=""></path>
-                                    </g>
-                                </svg>
-                            </a></li>
-                        <li><a href="#" class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
-                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
-                                    class="">
-                                    <g>
-                                        <path
-                                            d="M256.064 0h-.128C114.784 0 0 114.816 0 256c0 56 18.048 107.904 48.736 150.048l-31.904 95.104 98.4-31.456C155.712 496.512 204 512 256.064 512 397.216 512 512 397.152 512 256S397.216 0 256.064 0z"
-                                            style="" fill="#4caf50" data-original="#4caf50" class=""></path>
-                                        <path
-                                            d="M405.024 361.504c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.616-127.456-112.576-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016.16 8.576.288 7.52.32 11.296.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744-3.776 4.352-7.36 7.68-11.136 12.352-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
-                                            style="" fill="#fafafa" data-original="#fafafa"></path>
-                                    </g>
-                                </svg>
-                            </a></li>
-                    </ul>
-                    <a href="#" class="price-offer randevu">
-                        <span>Получить бесплатную консультацию</span>
-                    </a>
+                    </button>
                 </div>
+
+                <!-- Social icons -->
+                <ul class="text-white fs-5 d-flex gap-2 align-items-center list-unstyled mb-0">
+                    <li>
+                        <a href="#" aria-label="TikTok" target="_blank" rel="noopener noreferrer nofollow"
+                            class="text-white text-decoration-none">
+                            <svg class="svg-color" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <circle cx="12" cy="12" r="12" fill="#fff" opacity="1" data-original="#039be5"
+                                        class=""></circle>
+                                    <path fill="#000"
+                                        d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                                        opacity="1" data-original="#ffffff" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@LaoCarby" aria-label="YouTube" target="_blank"
+                            rel="noopener noreferrer nofollow">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M256.064 0h-.128C114.784 0 0 114.816 0 256c0 56 18.048 107.904 48.736 150.048l-31.904 95.104 98.4-31.456C155.712 496.512 204 512 256.064 512 397.216 512 512 397.152 512 256S397.216 0 256.064 0z"
+                                        style="" fill="#fff" data-original="#fff" class=""></path>
+                                    <path
+                                        d="M405.024 361.504c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.616-127.456-112.576-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016.16 8.576.288 7.52.32 11.296.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744-3.776 4.352-7.36 7.68-11.136 12.352-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
+                                        style="" fill="#000" data-original="#000" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Phone -->
+                <a href="tel:+375333337744"
+                    class="d-flex align-items-center text-white fs-5 gap-2 text-decoration-none">
+                    <img src="/img/phone.webp" alt="Phone" width="24" height="24" loading="lazy"
+                        class="object-fit-contain" />
+                    +375 (33) 333 77 44
+                </a>
+            </div>
+
+            <!-- ---------- MOBILE TOOLS ---------- -->
+            <div class="d-flex align-items-center gap-2 d-lg-none">
+                <!-- Language dropdown -->
+                <div class="position-relative">
+
+                </div>
+
+                <!-- Currency dropdown (mobile) -->
+                <div class="position-relative">
+
+                </div>
+
+                <!-- Hamburger -->
+                <button id="hamburger" aria-label="Toggle navigation" type="button"
+                    class="btn p-0 border-0 bg-transparent">
+                    <svg class="svg-color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.205 464.205" width="20"
+                        height="20">
+                        <path
+                            d="M435.192 406.18H29.013C12.989 406.18 0 393.19 0 377.167s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013zM435.192 261.115H29.013C12.989 261.115 0 248.126 0 232.103s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012zM435.192 116.051H29.013C12.989 116.051 0 103.062 0 87.038s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z" />
+                    </svg>
+                </button>
             </div>
         </div>
+
+        <!-- ---------- MOBILE SIDEBAR ---------- -->
+        <div class="all_sidebar">
+            <nav id="mobile_navbar">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="/">
+                        <img loading="lazy" class="img-fluid" style="width:80px;" src="/img/nstlogoremove.png"
+                            alt="Logo" width="80" height="63" />
+                    </a>
+                    <button id="cancel" type="button" class="btn p-0 border-0 bg-transparent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+                            <path
+                                d="M23.707.293a1 1 0 0 0-1.414 0L12 10.586 1.707.293a1 1 0 0 0-1.414 1.414L10.586 12 .293 22.293A1 1 0 1 0 1.707 23.707L12 13.414l10.293 10.293A1 1 0 0 0 23.707 22.293L13.414 12 23.707 1.707a1 1 0 0 0 0-1.414z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div>
+                    <ul class="mobile-menu text-center list-unstyled mb-4">
+                        <li class="menu-item my-2"><a
+                                class="menu-link text-white text-decoration-none text-uppercase fw-light"
+                                href="/">Главная страница</a></li>
+                        <li class="menu-item my-2"><a
+                                class="menu-link text-white text-decoration-none text-uppercase fw-light"
+                                href="/car/">Автопарк</a></li>
+                        <li class="menu-item my-2"><a
+                                class="menu-link text-white text-decoration-none text-uppercase fw-light"
+                                href="/uslovija/">Условия</a></li>
+                        <li class="menu-item my-2"><a
+                                class="menu-link text-white text-decoration-none text-uppercase fw-light"
+                                href="/blog/">Блог</a></li>
+                        <li class="menu-item my-2"><a
+                                class="menu-link text-white text-decoration-none text-uppercase fw-light"
+                                href="/otzyvy/">Отзывы</a></li>
+                        <li class="menu-item my-2"><a
+                                class="menu-link text-white text-decoration-none text-uppercase fw-light"
+                                href="/stat-partnerom/">Стать партнёром</a></li>
+                        <li class="menu-item my-2"><a
+                                class="menu-link text-white text-decoration-none text-uppercase fw-light"
+                                href="/contact/">Контакты</a></li>
+                    </ul>
+
+                    <div class="d-flex flex-column gap-2 align-items-center justify-content-center">
+                        <a href="tel:+375333337744"
+                            class="d-flex align-items-center text-white fs-5 gap-2 text-decoration-none">
+                            <img loading="lazy" src="/img/phone.webp" alt="Phone" width="24" height="24" />
+                            +375 (33) 333 77 44
+                        </a>
+                        <ul class="text-white fs-5 d-flex gap-2 align-items-center list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.tiktok.com/@laocar.by" target="_blank"
+                                    rel="noopener noreferrer nofollow" class="text-white">
+                                    <svg class="svg-color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        width="20" height="20">
+                                        <path d="M480.32 128.39c-29.22 0-56.18-9.68-77.83-26.01..." />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a href="https://www.youtube.com/@LaoCarby"><img src="/img/youtube.svg" width="24"
+                                        height="24" /></a></li>
+                            <li><a href="https://www.instagram.com/laocar.by"><img src="/img/inst.svg" width="24"
+                                        height="24" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
+
 
     <main>
         <div data-scroll-section="" class="first-screen">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="first-screen__bg"><img loading="lazy" src="/img/nstslider.jpg?width=300" srcset="
-/img/nstslider.jpg?quality=100&amp;width=1920 1920w,
-/img/nstslider.jpg?quality=100&amp;width=1620 1620w,
-/img/nstslider.jpg?quality=100&amp;width=1024 1024w,
-/img/nstslider.jpg?quality=100&amp;width=767 767w,
-/img/nstslider.jpg?quality=100&amp;width=414 414w,
-/img/nstslider.jpg?quality=100&amp;width=160 160w,
-/img/nstslider.jpg?quality=100&amp;width=120 120w,
-/img/nstslider.jpg?quality=100&amp;width=80 80w,
-/img/nstslider.jpg?quality=100&amp;width=60 60w"
+                        <div class="first-screen__bg"><img loading="lazy"
+                                src="/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?width=300" srcset="
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=1920 1920w,
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=1620 1620w,
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=1024 1024w,
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=767 767w,
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=414 414w,
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=160 160w,
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=120 120w,
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=80 80w,
+/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=60 60w"
                                 sizes="(max-width: 414px) 414px, (max-width: 767px) 767px, (max-width: 1024px) 1024px, (max-width: 1620px) 1620px, 1920px"
                                 alt="team_bg" data-testid="first_screen.team_image" data-autotest-image=""
                                 class="first-screen__bg-img"></div>
@@ -221,15 +295,22 @@
                                             class="first-screen__title-mob">
                                             ОФИЦИАЛЬНЫЙ АГЕНТ НА ТОРГАХ ПО БАНКРОТСТВУ И ГОСУДАРСТВЕННОМУ ИМУЩЕСТВУ
                                         </span></div>
-                                    <a class="themebtn randevu" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
-                                            <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
-                                        </svg>
-                                        Получить бесплатную консультацию
-                                    </a>
-                                    <div class="first-screen__award"><img
-                                            src="https://cdn.ww.estate/tp/s/whitewill.ru/uploads/common_pages/33/base-settings.award_bg/award-main-moscow-ru_1740128383.svg"
-                                            alt="award" data-testid="first_screen.award_image" data-autotest-image=""
+                                    <div class="d-flex justify-content-between pt-3">
+                                        <a style="margin-left: 100px;" class="themebtn randevu" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                                                <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                                            </svg>
+                                            У меня уже есть лот помогите выиграть
+                                        </a>
+                                        <a class="themebtn randevu" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                                                <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                                            </svg>
+                                            Получить бесплатную консультацию
+                                        </a>
+                                    </div>
+                                    <div class="first-screen__award"><img src="/img/15537949.png" alt="award"
+                                            data-testid="first_screen.award_image" data-autotest-image=""
                                             loading="lazy"></div>
                                 </div>
                                 <!-- <div data-testid="first_screen.team_image_description" data-autotest-text=""
@@ -243,115 +324,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="first-screen__bg"><img loading="lazy"
-                                src="/img/property_auction_hammer_house_for_sale.jpg?width=300" srcset="
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=1920 1920w,
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=1620 1620w,
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=1024 1024w,
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=767 767w,
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=414 414w,
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=160 160w,
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=120 120w,
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=80 80w,
-/img/property_auction_hammer_house_for_sale.jpg?quality=100&amp;width=60 60w"
-                                sizes="(max-width: 414px) 414px, (max-width: 767px) 767px, (max-width: 1024px) 1024px, (max-width: 1620px) 1620px, 1920px"
-                                alt="team_bg" data-testid="first_screen.team_image" data-autotest-image=""
-                                class="first-screen__bg-img"></div>
-                        <div class="container container_middle first-screen__content">
-                            <div class="first-screen__content-top">
-                                <div class="first-screen__title">
-                                    <div data-swiper-parallax="-300" data-testid="first_screen.title"
-                                        data-autotest-text="" class="first-screen__title-item">
-                                        Lorem.
-                                    </div>
-                                    <div data-swiper-parallax="-300" data-swiper-parallax="-300"
-                                        class="first-screen__title-item"><span data-testid="first_screen.title_desktop"
-                                            data-autotest-text="" class="first-screen__title-desk">
-                                            Lorem, ipsum.
-                                        </span> <span data-testid="first_screen.title_mobile" data-autotest-text=""
-                                            class="first-screen__title-mob">
-                                            Lorem, ipsum dolor.
-                                        </span></div>
-                                    <a class="randevu" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
-                                            <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
-                                        </svg>
-                                        Получить бесплатную консультацию
-                                    </a>
-                                    <div class="first-screen__award"><img
-                                            src="https://cdn.ww.estate/tp/s/whitewill.ru/uploads/common_pages/33/base-settings.award_bg/award-main-moscow-ru_1740128383.svg"
-                                            alt="award" data-testid="first_screen.award_image" data-autotest-image=""
-                                            loading="lazy"></div>
-                                </div>
-                                <!-- <div data-testid="first_screen.team_image_description" data-autotest-text=""
-                                    class="first-screen__photo-desc">
-                                    Фото сотрудников Whitewill<br>летом 2022 года
-                                </div> -->
-                            </div>
-                            <div data-swiper-parallax="-100" data-testid="first_screen.subtitle" data-autotest-text=""
-                                class="first-screen__subtitle">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium consectetur
-                                eligendi cum ad numquam dicta.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="first-screen__bg"><img loading="lazy" src="/img/nstslider3.webp?width=300" srcset="
-/img/nstslider3.webp?quality=100&amp;width=1920 1920w,
-/img/nstslider3.webp?quality=100&amp;width=1620 1620w,
-/img/nstslider3.webp?quality=100&amp;width=1024 1024w,
-/img/nstslider3.webp?quality=100&amp;width=767 767w,
-/img/nstslider3.webp?quality=100&amp;width=414 414w,
-/img/nstslider3.webp?quality=100&amp;width=160 160w,
-/img/nstslider3.webp?quality=100&amp;width=120 120w,
-/img/nstslider3.webp?quality=100&amp;width=80 80w,
-/img/nstslider3.webp?quality=100&amp;width=60 60w"
-                                sizes="(max-width: 414px) 414px, (max-width: 767px) 767px, (max-width: 1024px) 1024px, (max-width: 1620px) 1620px, 1920px"
-                                alt="team_bg" data-testid="first_screen.team_image" data-autotest-image=""
-                                class="first-screen__bg-img"></div>
-                        <div class="container container_middle first-screen__content">
-                            <div class="first-screen__content-top">
-                                <div class="first-screen__title">
-                                    <div data-swiper-parallax="-300" data-testid="first_screen.title"
-                                        data-autotest-text="" class="first-screen__title-item">
-                                        Lorem, ipsum.
-                                    </div>
-                                    <div data-swiper-parallax="-300" data-swiper-parallax="-300"
-                                        class="first-screen__title-item"><span data-testid="first_screen.title_desktop"
-                                            data-autotest-text="" class="first-screen__title-desk">
-                                            Lorem, ipsum dolor.
-                                        </span> <span data-testid="first_screen.title_mobile" data-autotest-text=""
-                                            class="first-screen__title-mob">
-                                            Lorem, ipsum.
-                                        </span></div>
-                                    <a class="randevu" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
-                                            <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
-                                        </svg>
-                                        Получить бесплатную консультацию
-                                    </a>
-                                    <div class="first-screen__award"><img
-                                            src="https://cdn.ww.estate/tp/s/whitewill.ru/uploads/common_pages/33/base-settings.award_bg/award-main-moscow-ru_1740128383.svg"
-                                            alt="award" data-testid="first_screen.award_image" data-autotest-image=""
-                                            loading="lazy"></div>
-                                </div>
-                                <!-- <div data-testid="first_screen.team_image_description" data-autotest-text=""
-                                    class="first-screen__photo-desc">
-                                    Фото сотрудников Whitewill<br>летом 2022 года
-                                </div> -->
-                            </div>
-                            <div data-swiper-parallax="-100" data-testid="first_screen.subtitle" data-autotest-text=""
-                                class="first-screen__subtitle">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem impedit ipsa nam
-                                officiis cupiditate consequuntur sapiente! Fugit, accusamus aperiam!
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="tile-categories__container container">
+            <h2 class="section-title">
+                Подберем под ваши цели и бюджет
+            </h2>
             <div class="tile-categories__tile-types">
                 <div class="tile-categories__tile-types__row tile-categories__tile-types__row-moscow active">
                     <a href="https://whitewill.ru/developments"
@@ -562,50 +541,46 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                     </div>
                 </div>
         </section>
-        <section class="benefits-section">
+        <section class="rent-fleet-section" aria-labelledby="rent_fleet">
             <div class="container">
-                <h2 class="section-title">Наши преимущества</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="icon">🌐</div>
-                        <p><strong>Единая точка входа</strong> — вам не нужно разбираться в 100+ площадках. Мы работаем
-                            на всех — и подадим заявку от вашего имени.</p>
+                <h2 class="section-title text-center mb-4">Наши преимущества</h2>
+                <div class="rent-fleet-grid">
+
+                    <div class="rent-fleet-item">
+                        <h3 class="rent-fleet-title" id="rent_fleet">🌐 <strong>Единая точка входа</strong> — вам не
+                            нужно разбираться в 100+ площадках. Мы работаем на всех — и подадим заявку от вашего имени.
+                        </h3>
                     </div>
 
-                    <div class="benefit-card">
-                        <div class="icon">📄</div>
-                        <p><strong>Ноль ошибок в документах</strong> — все заявки будут допущены!</p>
+                    <div class="rent-fleet-item">
+                        <h3 class="rent-fleet-title">📄 <strong>Ноль ошибок в документах</strong> — все заявки будут
+                            допущены!</h3>
                     </div>
 
-                    <div class="benefit-card">
-                        <div class="icon">🔍</div>
-                        <p><strong>Проверка объектов до участия</strong></p>
+                    <div class="rent-fleet-item">
+                        <h3 class="rent-fleet-title">🔍 <strong>Проверка объектов до участия</strong></h3>
                     </div>
 
-                    <div class="benefit-card">
-                        <div class="icon">🎯</div>
-                        <p><strong>Стратегия победы</strong> — ставим ставки по алгоритму, согласно опыту: выигрываем по
-                            выгодной для вас цене, не переплачивая.</p>
+                    <div class="rent-fleet-item">
+                        <h3 class="rent-fleet-title">🎯 <strong>Стратегия победы</strong> — ставим ставки по алгоритму,
+                            согласно опыту: выигрываем по выгодной для вас цене, не переплачивая.</h3>
                     </div>
 
-                    <div class="benefit-card">
-                        <div class="icon">⏱️</div>
-                        <p><strong>Экономия времени</strong> — вы не тратите дни на поиск. Мы подбираем лоты под ваш
-                            бюджет и цели.</p>
+                    <div class="rent-fleet-item">
+                        <h3 class="rent-fleet-title">⏱️ <strong>Экономия времени</strong> — вы не тратите дни на поиск.
+                            Мы подбираем лоты под ваш бюджет и цели.</h3>
                     </div>
 
-                    <div class="benefit-card">
-                        <div class="icon">🏆</div>
-                        <p><strong>Сопровождение до регистрации</strong> — контролируем каждый срок: оплата, акты,
-                            передача, Росреестр. Никаких “упустил — потерял”.
-                            <br><br><strong>МЫ ДЕЛАЕМ результат</strong> — БОЛЕЕ 300 выигранных лотов. Вы получаете
-                            имущество — мы получаем ваше “спасибо”.
-                        </p>
+                    <div class="rent-fleet-item">
+                        <h3 class="rent-fleet-title">🏆 <strong>Сопровождение до регистрации</strong> — контролируем
+                            каждый срок: оплата, акты, передача, Росреестр. Никаких “упустил —
+                            потерял”.<br><br><strong>МЫ ДЕЛАЕМ результат</strong> — БОЛЕЕ 300 выигранных лотов. Вы
+                            получаете имущество — мы получаем ваше “спасибо”.</h3>
                     </div>
+
                 </div>
             </div>
         </section>
-
         <section class="workflow">
             <h2 class="workflow-title">Наш процесс работы</h2>
 
@@ -652,19 +627,89 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 </div>
             </div>
         </section>
+        <!-- PRICING SECTION -->
+        <section class="pricing-area" aria-labelledby="pricing-heading">
+            <div class="pricing-container">
+                <h2 id="pricing-heading" class="section-title text-center">ТАРИФЫ — ПРОСТО, ЧЕСТНО, БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ
+                </h2>
+
+                <div class="pricing-swiper swiper">
+                    <div class="swiper-wrapper py-5">
+
+                        <!-- ПРОБА -->
+                        <div class="pricing-slide swiper-slide">
+                            <div class="pricing-card">
+                                <h3>🚀 «ПРОБА» — 8 000 ₽</h3>
+                                <p>Для первого раза или проверки одного лота → 1 участие в торгах + полное сопровождение
+                                    до регистрации права собственности</p>
+                                <a class="themebtn randevu" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                                        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                                    </svg>
+                                    Получить бесплатную консультацию
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- СТАРТ -->
+                        <div class="pricing-slide swiper-slide">
+                            <div class="pricing-card">
+                                <h3>🎯 «СТАРТ» — 20 000 ₽</h3>
+                                <p>Для тех, кто хочет начать участвовать регулярно → 2–5 участий + поиск лотов в нужной
+                                    вам локации + сопровождение до победы<br>
+                                    🏅 *ТОП-выбор клиентов* — 73% выбирают этот пакет</p>
+                                <a class="themebtn randevu" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                                        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                                    </svg>
+                                    Получить бесплатную консультацию
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- ИНВЕСТОР -->
+                        <div class="pricing-slide swiper-slide">
+                            <div class="pricing-card">
+                                <h3>💼 «ИНВЕСТОР» — 30 000 ₽</h3>
+                                <p>Для покупки с целью перепродажи → 6–10 участий + подбор объектов под перепродажу +
+                                    полное сопровождение сделки</p>
+                                <a class="themebtn randevu" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                                        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                                    </svg>
+                                    Получить бесплатную консультацию
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- VIP ИНВЕСТ -->
+                        <div class="pricing-slide swiper-slide">
+                            <div class="pricing-card">
+                                <h3>🏆 «VIP ИНВЕСТ» — 50 000 ₽</h3>
+                                <p>Полный цикл: от покупки до продажи — мы всё сделаем за вас → Персональный поиск
+                                    объектов с гарантированным доходом при перепродаже → Полное сопровождение: от
+                                    участия в торгах — до передачи денег от продажи вам</p>
+                                <a class="themebtn randevu" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                                        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                                    </svg>
+                                    Получить бесплатную консультацию
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="advantages">
             <div class="container">
                 <div class="advantage-top" align="center">
                     <div class="container">
                         <div class="advantage-text">
                             <h2 class="sec_title">ПОЧЕМУ МЫ — ВАШИ ЛУЧШИЕ и НАДЕЖНЫЕ АГЕНТЫ НА ТОРГАХ?</h2>
-                            <span><strong>НСТ</strong> — это компания, специализирующаяся на реализации квартир,
-                                недвижимости, транспорта, спецтехники и готового бизнеса. Мы работаем с объектами
-                                разного типа — от студий и коттеджей до кафе, магазинов и производств «под ключ». Кроме
-                                того, НСТ предлагает выгодные условия на государственное, муниципальное и арестованное
-                                имущество со скидками до 70%. Благодаря прозрачности, ответственности и
-                                профессиональному подходу компания завоевала доверие клиентов и продолжает активно
-                                развиваться на рынке.</span>
+                            <span><strong>Мы</strong> — не посредники и не “юристы на час”. <br></span>
+                            <span><strong>Мы</strong> — ваши официальные представители с 2016 года.<br></span>
                         </div>
                     </div>
                 </div>
@@ -673,35 +718,44 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                         <div class="advantage-box">
                             <div class="advantage-box-content">
                                 <i class="fa-solid fa-trophy" aria-hidden="true"></i>
-                                <span>Платите только при победе</span>
+                                <span>300+ выигранных лотов</span>
                             </div>
-                            <p>Никаких скрытых платежей “за воздух”. Комиссия — только если вы выиграли торги.</p>
+                            <p>Мы помогли клиентам выиграть более 300 лотов — гарантированный результат и опыт.</p>
                         </div>
 
                         <div class="advantage-box">
                             <div class="advantage-box-content">
-                                <i class="fa-solid fa-laptop" aria-hidden="true"></i>
-                                <span>Всё — онлайн</span>
+                                <i class="fa-solid fa-coins" aria-hidden="true"></i>
+                                <span>500+ млн ₽ — сумма наших сделок</span>
                             </div>
-                            <p>Не нужно никуда ехать, стоять в очередях или тратить дни на бумажки.</p>
+                            <p>Общая стоимость выигранных объектов превышает 500 миллионов рублей.</p>
                         </div>
 
                         <div class="advantage-box">
                             <div class="advantage-box-content">
-                                <i class="fa-solid fa-file-signature" aria-hidden="true"></i>
-                                <span>Договор = доверенность</span>
+                                <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                                <span>9 лет на рынке — знаем каждую ловушку</span>
                             </div>
-                            <p>Экономим вам 3–5 дней и 5 000+ ₽ на нотариусе.</p>
+                            <p>9 лет опыта участия в торгах — мы знаем все подводные камни и действуем уверенно.</p>
                         </div>
 
                         <div class="advantage-box">
                             <div class="advantage-box-content">
-                                <i class="fa-solid fa-certificate" aria-hidden="true"></i>
-                                <span>ЭЦП со скидкой 30%</span>
+                                <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
+                                <span>Работаем по договору — с гарантиями и ответственностью</span>
                             </div>
-                            <p>Рабочая подпись для всех площадок (не та, что из ФНС — она не подойдёт!).</p>
+                            <p>Все условия фиксируются официально — прозрачность и ответственность на каждом этапе.</p>
+                        </div>
+
+                        <div class="advantage-box">
+                            <div class="advantage-box-content">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                <span>Прозрачность на каждом шаге</span>
+                            </div>
+                            <p>Предоставляем отчёты, скриншоты, фото и чеки — вы видите весь процесс изнутри.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -1202,7 +1256,6 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 </div>
             </div>
         </section>
-        <div id="map"></div>
     </main>
 
     <footer>
@@ -1331,6 +1384,8 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                 </div>
                             </div>
                         </div>
+
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
@@ -1371,7 +1426,26 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
             // Your custom options
         });
     </script>
+    <script>
 
+        const pricingSwiper = new Swiper('.pricing-swiper', {
+            slidesPerView: 3,       // Desktopda 3 slide
+            spaceBetween: 20,
+            autoplay: true,
+            centeredSlides: true,    // Ortadakı slide mərkəzdə
+            grabCursor: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                },
+            },
+        });
+    </script>
     <script type="text/javascript">
         ymaps.ready(init);
         function init() {
