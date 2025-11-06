@@ -1,3 +1,30 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const openButton = document.querySelector(".modalBtn");
+    const closeButton = document.querySelector(".closeBtn");
+    const modal = document.querySelector(".customModalContainer");
+
+    // Modal açmaq
+    openButton.addEventListener("click", () => {
+        modal.classList.add("show");
+        document.body.classList.add("no-scroll");
+    });
+
+    // Modal bağlamaq (X düyməsi)
+    closeButton.addEventListener("click", () => {
+        modal.classList.remove("show");
+        document.body.classList.remove("no-scroll");
+    });
+
+    // Fon hissəsinə klik edəndə bağlansın
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.remove("show");
+            document.body.classList.remove("no-scroll");
+        }
+    });
+});
+
+
 var mainDiv = document.getElementById('main-button');
 mainDiv.addEventListener('click', function () {
     this.children.item(0).classList.toggle('fa-times');

@@ -24,6 +24,41 @@
 
 <body>
 
+    <!-- Modal konteyner -->
+    <div class="customModalContainer">
+        <div class="customModal">
+            <div class="customModalHeader">
+                <h4>Мы с вами свяжемся</h4>
+                <button type="button" class="closeBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.021 512.021" width="16" height="16">
+                        <path d="M301.258,256.01L502.645,54.645c12.501-12.501,12.501-32.769,0-45.269c-12.501-12.501-32.769-12.501-45.269,0
+                        L256.01,210.762L54.645,9.376c-12.501-12.501-32.769-12.501-45.269,0s-12.501,32.769,0,45.269L210.762,256.01
+                        L9.376,457.376c-12.501,12.501-12.501,32.769,0,45.269s32.769,12.501,45.269,0L256.01,301.258l201.365,201.387
+                        c12.501,12.501,32.769,12.501,45.269,0c12.501-12.501,12.501-32.769,0-45.269L301.258,256.01z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="custommodal-body">
+                <form id="contactForm2">
+                    <div class="row">
+                        <div class="col-12">
+                            <input required type="text" name="fullName" class="effect" placeholder="Ваше имя">
+                        </div>
+                        <div class="col-12">
+                            <input required type="number" name="phoneNumber" class="effect"
+                                placeholder="Номер телефона">
+                        </div>
+                        <div class="col-12">
+                            <input class="btn submit-btn cursor-pointer" type="submit" value="Отправить">
+                            <span id="response2" class="col-12 response"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="eye-modal" id="appointmentModal" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="eye-modal__backdrop"></div>
 
@@ -125,7 +160,7 @@
                 <!-- Currency dropdown (desktop) -->
                 <div class="position-relative">
                     <button type="button"
-                        class="themebtn randevu w-100 border p-2 pe-2 d-flex align-items-center justify-content-center">
+                        class="themebtn modalBtn modalBtn w-100 border p-2 pe-2 d-flex align-items-center justify-content-center">
                         <div class="d-flex align-items-center gap-2 text-white">
                             <span class="selectedCurrencyText">Получить бесплатную консультацию</span>
                         </div>
@@ -320,10 +355,10 @@
                                 </div> -->
                             </div>
                         </div>
-                        <a class="themebtn randevu" href="#">
+                        <a class="themebtn modalBtn" href="#">
                             У меня уже есть лот помогите выиграть
                         </a>
-                        <a class="themebtn randevu" href="#">
+                        <a class="themebtn modalBtn" href="#">
                             Получить бесплатную консультацию
                         </a>
                     </div>
@@ -339,7 +374,7 @@
                     <a href="https://whitewill.ru/developments"
                         data-testid="tile_categories.moscow_new_real_estate_link"
                         data-test-group="tile_categories.buttons"
-                        class="tile-categories__tile-types__item tile-categories__tile-types__item_full-mob randevu">
+                        class="tile-categories__tile-types__item tile-categories__tile-types__item_full-mob modalBtn">
                         <div class="service_overlay">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum
                                 beatae?</p>
@@ -371,7 +406,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg1m.png?width=18
                         </div>
                     </a>
                     <a href="https://whitewill.ru/buy" data-testid="tile_categories.moscow_secondary_real_estate_link"
-                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item randevu">
+                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item modalBtn">
                         <div class="service_overlay">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum
                                 beatae?</p>
@@ -405,7 +440,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg2m.png?width=18
                         </div>
                     </a>
                     <a href="https://whitewill.ru/rent" data-testid="tile_categories.moscow_rental_real_estate_link"
-                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item randevu">
+                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item modalBtn">
                         <div class="service_overlay">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum
                                 beatae?</p>
@@ -442,7 +477,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg3m.png?width=18
         </div>
         <div class="lead-cards__wrapp container">
             <div class="lead-cards">
-                <div data-popup="callback-sale" class="lead-card randevu">
+                <div data-popup="callback-sale" class="lead-card modalBtn">
                     <div class="service_overlay">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum beatae?
                         </p>
@@ -466,7 +501,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-sale-mob.png?w
                         sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 444px, (max-width: 1620px) 702px, 832px"
                         alt="sell" class="is-mobile">
                 </div>
-                <div data-popup="callback-rent" class="lead-card randevu">
+                <div data-popup="callback-rent" class="lead-card modalBtn">
                     <div class="service_overlay">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum beatae?
                         </p>
@@ -694,7 +729,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                 <h3>🚀 «ПРОБА» — 8 000 ₽</h3>
                                 <p>Для первого раза или проверки одного лота → 1 участие в торгах + полное сопровождение
                                     до регистрации права собственности</p>
-                                <a class="themebtn randevu" href="#">
+                                <a class="themebtn modalBtn" href="#">
                                     Получить бесплатную консультацию
                                 </a>
                             </div>
@@ -707,7 +742,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                 <p>Для тех, кто хочет начать участвовать регулярно → 2–5 участий + поиск лотов в нужной
                                     вам локации + сопровождение до победы<br>
                                     🏅 *ТОП-выбор клиентов* — 73% выбирают этот пакет</p>
-                                <a class="themebtn randevu" href="#">
+                                <a class="themebtn modalBtn" href="#">
                                     Получить бесплатную консультацию
                                 </a>
                             </div>
@@ -719,7 +754,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                 <h3>💼 «ИНВЕСТОР» — 30 000 ₽</h3>
                                 <p>Для покупки с целью перепродажи → 6–10 участий + подбор объектов под перепродажу +
                                     полное сопровождение сделки</p>
-                                <a class="themebtn randevu" href="#">
+                                <a class="themebtn modalBtn" href="#">
                                     Получить бесплатную консультацию
                                 </a>
                             </div>
@@ -732,7 +767,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                 <p>Полный цикл: от покупки до продажи — мы всё сделаем за вас → Персональный поиск
                                     объектов с гарантированным доходом при перепродаже → Полное сопровождение: от
                                     участия в торгах — до передачи денег от продажи вам</p>
-                                <a class="themebtn randevu" href="#">
+                                <a class="themebtn modalBtn" href="#">
                                     Получить бесплатную консультацию
                                 </a>
                             </div>
@@ -748,7 +783,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                     <div class="container">
                         <div class="advantage-text">
                             <h2 class="sec_title">ПОЧЕМУ МЫ — ВАШИ ЛУЧШИЕ и НАДЕЖНЫЕ АГЕНТЫ НА ТОРГАХ?</h2>
-                            <span><strong>Мы</strong> — не посредники и не “юристы на час”. <br></span>
+                            <span><strong>Мы</strong> — не посредники и не "юристы на час". <br></span>
                             <span><strong>Мы</strong> — ваши официальные представители с 2016 года.<br></span>
                         </div>
                     </div>
@@ -804,13 +839,14 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
             <div class="special-offer-container container">
                 <div class="special_grid">
                     <div class="p-5">
-                        <h2 class="special-offer-title">СПЕЦПРЕДЛОЖЕНИЕ ДО <br><span id="countdown-date">[DATE]</span>:
+                        <h2 class="special-offer-title">СПЕЦПРЕДЛОЖЕНИЕ ДО <br><span id="countdown-date">[DATE]</span>
                         </h2>
                         <p class="special-offer-text">
-                            **Скидка 50% на услуги агента при заказе до <span id="countdown-date-2">[DATE]</span>!**<br>
-                            Добавить счетчик: осталось <br><span class="fs-1" id="countdown-timer">00д 00ч 00м 00с</span> <br>до конца акции!
+                            Скидка 50% на услуги агента при заказе до <span id="countdown-date-2">[DATE]</span>!<br>
+                            Добавить счетчик: осталось <br><span class="fs-1" id="countdown-timer">00д 00ч 00м
+                                00с</span> <br>до конца акции!
                         </p>
-                        <a class="themebtn randevu" href="#">Забронировать скидку 50%</a>
+                        <a class="themebtn modalBtn" href="#">Забронировать скидку 50%</a>
                     </div>
                     <img src="https://petrieflom.law.harvard.edu/wp-content/uploads/2021/10/shutterstock_1420924517-scaled-e1634670981407.jpg"
                         alt="">
@@ -857,7 +893,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                         sed.
                                     </p>
                                 </div>
-                                <a class="themebtn randevu" href="/about/">
+                                <a class="themebtn modalBtn" href="#">
                                     Получить бесплатную консультацию
                                 </a>
                             </div>
@@ -1215,7 +1251,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                 <h3 class="contact-title">
                                     <span id="contact">Есть вопросы? Звони!</span>
                                     <p>Бесплатная консультация и помощь эксперта в выборе автомобиля по телефону:</p>
-                                    <a href="tel:+375333337744" class="contact-phone">+375 (33) 333 77 44</a>
+                                    <a href="tel:+8 (919) 440-88-85" class="contact-phone">+8 (919) 440-88-85</a>
                                 </h3>
                             </div>
 
@@ -1223,13 +1259,14 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                 <a href="https://api.whatsapp.com/message/WWLWPOUFFCXTF1?autoload=1&amp;app_absent=0"
                                     target="_blank" rel="noopener noreferrer nofollow" class="btn-whatsapp">Написать в
                                     WhatsApp</a>
-                                <a href="https://t.me/+375333337744" target="_blank" rel="noopener noreferrer nofollow"
-                                    class="btn-telegram">Написать в Telegram</a>
+                                <a href="https://t.me/+8 (919) 440-88-85" target="_blank"
+                                    rel="noopener noreferrer nofollow" class="btn-telegram">Написать в Telegram</a>
                             </div>
                         </div>
 
                         <div class="contact-image">
-                            <img src="https://wallpapers.com/images/hd/golden-scales-of-justice-png-88-azphgfiwbixxhswd.png" alt="Laocar" loading="lazy" width="480" height="287">
+                            <img src="https://wallpapers.com/images/hd/golden-scales-of-justice-png-88-azphgfiwbixxhswd.png"
+                                alt="Laocar" loading="lazy" width="480" height="287">
                         </div>
                     </div>
                 </div>
@@ -1293,7 +1330,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <p class="sec_title">Нужен индивидуальный расчёт стоимости?</p>
+                        <p class="sec_title text-start">Нужен индивидуальный расчёт стоимости?</p>
                         <p class="little">Заполните необходимые поля, и наш представитель свяжется с вами в ближайшее
                             время,
                             чтобы предоставить персональное коммерческое предложение.</p>
@@ -1494,11 +1531,11 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                     <span class="to-animate"></span>
                                     <h5 class="rv-1-footer-widget__title">Компания</h5>
                                     <ul class="rv-6-footer-widget__links">
-                                        <li><a href="/about/">О нас</a></li>
-                                        <li><a href="/services/">Услуги</a></li>
-                                        <li><a href="/projects/">Проекты</a></li>
-                                        <li><a href="/career/">Карьера</a></li>
-                                        <li><a href="/contact/">Контакты</a></li>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Услуги</a></li>
+                                        <li><a href="#">Проекты</a></li>
+                                        <li><a href="#">Карьера</a></li>
+                                        <li><a href="#">Контакты</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1508,11 +1545,11 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                     <span class="to-animate"></span>
                                     <h5 class="rv-1-footer-widget__title">Полезное</h5>
                                     <ul class="rv-6-footer-widget__links">
-                                        <li><a href="/blog/">Статьи</a></li>
-                                        <li><a href="/faq/">Вопросы и ответы</a></li>
-                                        <li><a href="/team/">Команда</a></li>
-                                        <li><a href="/reviews/">Отзывы</a></li>
-                                        <li><a href="/contact/">Обратная связь</a></li>
+                                        <li><a href="#">Статьи</a></li>
+                                        <li><a href="#">Вопросы и ответы</a></li>
+                                        <li><a href="#">Команда</a></li>
+                                        <li><a href="#">Отзывы</a></li>
+                                        <li><a href="#">Обратная связь</a></li>
                                     </ul>
                                 </div>
                             </div>
