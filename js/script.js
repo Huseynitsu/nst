@@ -31,26 +31,32 @@ document.addEventListener("DOMContentLoaded", () => {
     const cancel = document.getElementById("cancel");
     const mobileNavbar = document.getElementById("mobile_navbar");
 
-    // Menü aç
-    hamburger.addEventListener("click", () => {
-        mobileNavbar.style.left = "0"; // navbar görünür
-    });
+    const openMenu = () => {
+        mobileNavbar.style.left = "0";
+        document.body.style.overflow = "hidden";
+    };
 
-    // Menü bağla
-    cancel.addEventListener("click", () => {
-        mobileNavbar.style.left = "1000px"; // navbar gizlənir
-    });
+    const closeMenu = () => {
+        mobileNavbar.style.left = "1200px";
+        document.body.style.overflow = "auto";
+    };
 
-    // İstəyə görə overlay kliklə də bağlamaq olar
+    // Aç
+    hamburger.addEventListener("click", openMenu);
+
+    // Bağla
+    cancel.addEventListener("click", closeMenu);
+
+    // Kənara klik — bağlanmalıdı
     document.addEventListener("click", (e) => {
-        if (!mobileNavbar.contains(e.target) && e.target !== hamburger) {
-            mobileNavbar.style.left = "0";
+        const clickedInsideMenu = mobileNavbar.contains(e.target);
+        const clickedHamburger = e.target === hamburger || hamburger.contains(e.target);
+
+        if (!clickedInsideMenu && !clickedHamburger) {
+            closeMenu();
         }
     });
 });
-
-
-
 
 var mainDiv = document.getElementById('main-button');
 mainDiv.addEventListener('click', function () {
