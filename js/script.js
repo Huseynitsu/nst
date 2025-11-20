@@ -26,6 +26,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const cancel = document.getElementById("cancel");
+    const mobileNavbar = document.getElementById("mobile_navbar");
+
+    // Menü aç
+    hamburger.addEventListener("click", () => {
+        mobileNavbar.style.left = "0"; // navbar görünür
+    });
+
+    // Menü bağla
+    cancel.addEventListener("click", () => {
+        mobileNavbar.style.left = "1000px"; // navbar gizlənir
+    });
+
+    // İstəyə görə overlay kliklə də bağlamaq olar
+    document.addEventListener("click", (e) => {
+        if (!mobileNavbar.contains(e.target) && e.target !== hamburger) {
+            mobileNavbar.style.left = "0";
+        }
+    });
+});
+
+
 
 
 var mainDiv = document.getElementById('main-button');

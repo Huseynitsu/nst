@@ -1196,7 +1196,7 @@ header.active {
 #mobile_navbar {
     max-width: 400px;
     top: 0;
-    left: 0;
+    left: 1000px;
     width: 100%;
     background-color: #323232;
     z-index: 999;
@@ -1205,7 +1205,6 @@ header.active {
     position: fixed;
     height: 100vh;
     overflow-y: scroll;
-    display: none;
 }
 
 #mobile_navbar::-webkit-scrollbar {
