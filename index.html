@@ -77,16 +77,6 @@
                             Вы — заказчик. Мы — исполнитель. Ваша задача — получить имущество
                             дешевле рынка. Наша — сделать это без единой ошибки.
                         </p>
-
-                        <!-- <div class="contact-buttons">
-                            <a href="https://t.me/YourTelegramUsername" target="_blank" class="modalbtn telegram">
-                                НАПИСАТЬ В TELEGRAM <i class="fa-brands fa-telegram-plane"></i>
-                            </a>
-
-                            <a href="https://wa.me/YourPhoneNumber" target="_blank" class="modalbtn whatsapp">
-                                НАПИСАТЬ В WHATSAPP <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                        </div> -->
                         <form class="eye-form" id="eyeForm">
                             <div class="eye-field">
                                 <label>Ваше имя и фамилия</label>
@@ -130,31 +120,34 @@
         <div id="main-button" class="wave">
             <i style="align-self: center;" class="fas fa-comments"></i>
         </div>
-        <a href="https://t.me/dostup_medic_nsk" class="telegram-color"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#" class="telegram-color"><i class="fab fa-telegram-plane"></i></a>
         <a href="https://wa.me/79130035878" class="whatsapp-color"><i class="fab fa-whatsapp"></i></a>
     </div>
 
-    <header class="position-fixed w-100 top-0 start-0 z-3 py-4 transition">
+    <header class="position-fixed w-100 top-0 start-0 z-3 py-4 transition" role="banner">
         <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
-            <!-- ---------- LOGO + DESKTOP NAV ---------- -->
+
+            <!-- Logo + Desktop Menu -->
             <div class="d-flex align-items-center gap-3">
-                <a href="/">
-                    <img loading="lazy" class="img-fluid" style="width:120px;" src="/img/nstlogoremove.png" alt="Logo"
-                        width="120" height="63" />
+                <a href="/" aria-label="Homepage">
+                    <img loading="lazy" class="img-fluid" style="width:120px;" src="/img/nstlogoremove.png"
+                        alt="Company Logo" width="120" height="63">
                 </a>
 
-                <!-- Desktop menu -->
-                <ul class="d-none d-lg-flex text-white fs-6 gap-3 list-unstyled mb-0">
-                    <li><a href="/car/" class="text-decoration-none text-white">Lorem.</a></li>
-                    <li><a href="/uslovija/" class="text-decoration-none text-white">Lorem.</a></li>
-                    <li><a href="/sertifikaty/" class="text-decoration-none text-white">Lorem.</a></li>
-                    <li><a href="/blog/" class="text-decoration-none text-white">Lorem.</a></li>
-                    <li><a href="/stat-partnerom/" class="text-decoration-none text-white">Lorem, ipsum.</a></li>
-                    <li><a href="/contact/" class="text-decoration-none text-white">Lorem.</a></li>
-                </ul>
+                <!-- Desktop navigation -->
+                <nav aria-label="Primary navigation">
+                    <ul class="d-none d-lg-flex text-white fs-6 gap-3 list-unstyled mb-0">
+                        <li><a href="/car/" class="text-decoration-none text-white">Lorem.</a></li>
+                        <li><a href="/uslovija/" class="text-decoration-none text-white">Lorem.</a></li>
+                        <li><a href="/sertifikaty/" class="text-decoration-none text-white">Lorem.</a></li>
+                        <li><a href="/blog/" class="text-decoration-none text-white">Lorem.</a></li>
+                        <li><a href="/stat-partnerom/" class="text-decoration-none text-white">Lorem, ipsum.</a></li>
+                        <li><a href="/contact/" class="text-decoration-none text-white">Lorem.</a></li>
+                    </ul>
+                </nav>
             </div>
 
-            <!-- ---------- DESKTOP TOOLS (currency, socials, phone) ---------- -->
+            <!-- Desktop Tools (Buttons, Social, Phone) -->
             <div class="d-none d-lg-flex align-items-center gap-4">
 
                 <!-- Currency dropdown (desktop) -->
@@ -174,8 +167,7 @@
                             class="text-white text-decoration-none">
                             <svg class="svg-color" xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
-                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
-                                class="">
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve">
                                 <g>
                                     <circle cx="12" cy="12" r="12" fill="#fff" opacity="1" data-original="#039be5"
                                         class=""></circle>
@@ -187,8 +179,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.youtube.com/@LaoCarby" aria-label="YouTube" target="_blank"
-                            rel="noopener noreferrer nofollow">
+                        <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer nofollow">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
@@ -210,644 +201,790 @@
                 <a href="tel:+8 (919) 440-88-85"
                     class="d-flex align-items-center text-white fs-5 gap-2 text-decoration-none">
                     <img src="/img/phone.webp" alt="Phone" width="24" height="24" loading="lazy"
-                        class="object-fit-contain" />
+                        class="object-fit-contain">
                     +8 (919) 440-88-85
                 </a>
             </div>
 
-            <!-- ---------- MOBILE TOOLS ---------- -->
+            <!-- MOBILE TOOLS -->
             <div class="d-flex align-items-center gap-2 d-lg-none">
-                <!-- Language dropdown -->
-                <div class="position-relative">
 
-                </div>
-
-                <!-- Currency dropdown (mobile) -->
-                <div class="position-relative">
-
-                </div>
-
-                <!-- Hamburger -->
-                <button id="hamburger" aria-label="Toggle navigation" type="button"
+                <!-- Hamburger Menu -->
+                <button id="hamburger" aria-label="Open mobile menu" type="button"
                     class="btn p-0 border-0 bg-transparent">
-                    <svg class="svg-color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.205 464.205" width="20"
-                        height="20">
-                        <path
-                            d="M435.192 406.18H29.013C12.989 406.18 0 393.19 0 377.167s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013zM435.192 261.115H29.013C12.989 261.115 0 248.126 0 232.103s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012zM435.192 116.051H29.013C12.989 116.051 0 103.062 0 87.038s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z" />
+                    <svg class="svg-color" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 464.205 464.205">
+                        <path d="M435.192 406.18H29.013C12.989 406.18..."></path>
                     </svg>
                 </button>
             </div>
         </div>
 
-        <!-- ---------- MOBILE SIDEBAR ---------- -->
+        <!-- MOBILE SIDEBAR -->
         <div class="all_sidebar">
-            <nav id="mobile_navbar">
+            <nav id="mobile_navbar" aria-label="Mobile navigation">
                 <div class="d-flex align-items-center justify-content-between">
-                    <a href="/">
+                    <a href="/" aria-label="Homepage">
                         <img loading="lazy" class="img-fluid" style="width:80px;" src="/img/nstlogoremove.png"
-                            alt="Logo" width="80" height="63" />
+                            alt="Company Logo" width="80" height="63">
                     </a>
-                    <button id="cancel" type="button" class="btn p-0 border-0 bg-transparent">
+
+                    <button id="cancel" type="button" class="btn p-0 border-0 bg-transparent"
+                        aria-label="Close mobile menu">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#fff">
-                            <path
-                                d="M23.707.293a1 1 0 0 0-1.414 0L12 10.586 1.707.293a1 1 0 0 0-1.414 1.414L10.586 12 .293 22.293A1 1 0 1 0 1.707 23.707L12 13.414l10.293 10.293A1 1 0 0 0 23.707 22.293L13.414 12 23.707 1.707a1 1 0 0 0 0-1.414z" />
+                            <path d="M23.707.293a1 1 0 0 0-1.414 0L12 10.586..."></path>
                         </svg>
                     </button>
                 </div>
 
-                <div>
-                    <ul class="mobile-menu text-center list-unstyled mb-4">
-                        <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase "
-                                href="/">Lorem, ipsum.</a></li>
-                        <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase "
-                                href="/car/">Lorem.</a></li>
-                        <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase "
-                                href="/uslovija/">Lorem.</a></li>
-                        <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase "
-                                href="/blog/">Lorem.</a></li>
-                        <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase "
-                                href="/otzyvy/">Lorem.</a></li>
-                        <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase "
-                                href="/stat-partnerom/">Lorem.</a></li>
-                        <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase "
-                                href="/contact/">Lorem.</a></li>
-                    </ul>
+                <!-- Mobile Menu Links -->
+                <ul class="mobile-menu text-center list-unstyled mb-4">
+                    <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase"
+                            href="/">Lorem, ipsum.</a></li>
+                    <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase"
+                            href="/car/">Lorem.</a></li>
+                    <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase"
+                            href="/uslovija/">Lorem.</a></li>
+                    <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase"
+                            href="/blog/">Lorem.</a></li>
+                    <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase"
+                            href="/otzyvy/">Lorem.</a></li>
+                    <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase"
+                            href="/stat-partnerom/">Lorem.</a></li>
+                    <li class="menu-item my-2"><a class="menu-link text-white text-decoration-none text-uppercase"
+                            href="/contact/">Lorem.</a></li>
+                </ul>
 
-                    <div class="d-flex flex-column gap-2 align-items-center justify-content-center">
-                        <a href="tel:+8 (919) 440-88-85"
-                            class="d-flex align-items-center text-white fs-5 gap-2 text-decoration-none">
-                            <img loading="lazy" src="/img/phone.webp" alt="Phone" width="24" height="24" />
-                            +8 (919) 440-88-85
-                        </a>
-                        <ul class="text-white fs-5 d-flex gap-2 align-items-center list-unstyled mb-0">
-                            <li>
-                                <a href="https://www.tiktok.com/@laocar.by" target="_blank"
-                                    rel="noopener noreferrer nofollow" class="text-white">
-                                    <svg class="svg-color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                        width="20" height="20">
-                                        <path d="M480.32 128.39c-29.22 0-56.18-9.68-77.83-26.01..." />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li><a href="https://www.youtube.com/@LaoCarby"><img src="/img/youtube.svg" width="24"
-                                        height="24" /></a></li>
-                            <li><a href="https://www.instagram.com/laocar.by"><img src="/img/inst.svg" width="24"
-                                        height="24" /></a></li>
-                        </ul>
-                    </div>
+                <!-- Mobile Contacts -->
+                <div class="d-flex flex-column gap-2 align-items-center justify-content-center">
+                    <a href="tel:+8 (919) 440-88-85"
+                        class="d-flex align-items-center text-white fs-5 gap-2 text-decoration-none">
+                        <img loading="lazy" src="/img/phone.webp" alt="Phone icon" width="24" height="24">
+                        +8 (919) 440-88-85
+                    </a>
+
+                    <ul class="text-white fs-5 d-flex gap-2 align-items-center list-unstyled mb-0"
+                        aria-label="Mobile social links">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer nofollow"><img src="/img/tiktok.svg"
+                                    width="20"></a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer nofollow"><img src="/img/youtube.svg"
+                                    width="24"></a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer nofollow"><img src="/img/inst.svg"
+                                    width="24"></a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
     </header>
 
 
+
     <main>
-        <div data-scroll-section="" class="first-screen">
-            <div class="swiper">
+        <div data-scroll-section class="first-screen">
+            <div class="swiper" aria-label="Hero slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="first-screen__bg"><img loading="lazy"
-                                src="/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?width=300" srcset="
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=1920 1920w,
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=1620 1620w,
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=1024 1024w,
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=767 767w,
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=414 414w,
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=160 160w,
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=120 120w,
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=80 80w,
-/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&amp;width=60 60w"
-                                sizes="(max-width: 414px) 414px, (max-width: 767px) 767px, (max-width: 1024px) 1024px, (max-width: 1620px) 1620px, 1920px"
-                                alt="team_bg" data-testid="first_screen.team_image" data-autotest-image=""
-                                class="first-screen__bg-img"></div>
 
+                        <!-- Background image -->
+                        <div class="first-screen__bg">
+                            <img loading="lazy" src="/img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?width=300"
+                                srcset="
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=1920 1920w,
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=1620 1620w,
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=1024 1024w,
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=767 767w,
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=414 414w,
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=160 160w,
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=120 120w,
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=80 80w,
+                            /img/QmdveUJkvjMRrPLPns3mgfsRoHPYBNHcvFENp4mYs1fkPA.avif?quality=100&width=60 60w
+                        " sizes="(max-width: 414px) 414px, (max-width: 767px) 767px, (max-width: 1024px) 1024px, (max-width: 1620px) 1620px, 1920px"
+                                alt="Команда компании" class="first-screen__bg-img"
+                                data-testid="first_screen.team_image">
+                        </div>
+
+                        <!-- Content -->
                         <div class="container container_middle first-screen__content">
                             <div class="first-screen__content-top">
-                                <div class="first-screen__title">
-                                    <div data-testid="first_screen.title" data-autotest-text=""
-                                        class="first-screen__title-item">
+
+                                <header class="first-screen__title">
+                                    <h1 class="first-screen__title-item" data-testid="first_screen.title">
                                         ОФИЦИАЛЬНЫЙ
-                                    </div>
-                                    <div data-swiper-parallax="-300" class="first-screen__title-item"><span
-                                            data-testid="first_screen.title_desktop" data-autotest-text=""
-                                            class="first-screen__title-desk">
-                                            АГЕНТ НА ТОРГАХ ПО БАНКРОТСТВУ И ГОСУДАРСТВЕННОМУ ИМУЩЕСТВУ
-                                        </span> <span data-testid="first_screen.title_mobile" data-autotest-text=""
-                                            class="first-screen__title-mob">
-                                            ОФИЦИАЛЬНЫЙ АГЕНТ НА ТОРГАХ ПО БАНКРОТСТВУ И ГОСУДАРСТВЕННОМУ ИМУЩЕСТВУ
+                                    </h1>
+
+                                    <div data-swiper-parallax="-300" class="first-screen__title-item">
+                                        <span data-testid="first_screen.title_desktop" class="first-screen__title-desk">
+                                            АГЕНТ НА ТОРГАХ ПО БАНКРОТСТВУ И ГОСУДАРСТВЕННОМУ ИМУЩЕСТВУ
                                         </span>
 
-                                        <div data-testid="first_screen.subtitle" data-autotest-text=""
-                                            class="first-screen__subtitle">
-                                            «Покупайте имущество со скидкой до 70% — БЕЗ РИСКОВ, БУМАЖНОЙ
-                                            ВОЛОКИТЫ, ПОД КЛЮЧ
-                                        </div>
+                                        <span data-testid="first_screen.title_mobile" class="first-screen__title-mob">
+                                            ОФИЦИАЛЬНЫЙ АГЕНТ НА ТОРГАХ ПО БАНКРОТСТВУ И ГОСУДАРСТВЕННОМУ ИМУЩЕСТВУ
+                                        </span>
+
+                                        <p class="first-screen__subtitle" data-testid="first_screen.subtitle">
+                                            «Покупайте имущество со скидкой до 70% — без рисков, бумажной волокиты, под
+                                            ключ»
+                                        </p>
                                     </div>
-                                    <div class="d-flex justify-content-between pt-3">
-                                    </div>
-                                    <!-- <div class="first-screen__award"><img src="/img/15537949.png" alt="award"
-                                            data-testid="first_screen.award_image" data-autotest-image=""
-                                            loading="lazy"></div> -->
-                                </div>
-                                <!-- <div data-testid="first_screen.team_image_description" data-autotest-text=""
-                                    class="first-screen__photo-desc">
-                                    Фото сотрудников Whitewill<br>летом 2022 года
-                                </div> -->
+                                </header>
+
                             </div>
                         </div>
-                        <a class="themebtn modalBtn" href="#">
-                            У меня уже есть лот помогите выиграть
-                        </a>
-                        <a class="themebtn modalBtn" href="#">
-                            Получить бесплатную консультацию
-                        </a>
+
+                        <!-- CTA buttons -->
+                        <div class="d-flex flex-column align-items-start gap-2">
+                            <a class="themebtn modalBtn" href="#" aria-label="Помощь в выигрыше лота">
+                                У меня уже есть лот — помогите выиграть
+                            </a>
+
+                            <a class="themebtn modalBtn" href="#" aria-label="Получить бесплатную консультацию">
+                                Получить бесплатную консультацию
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
+        <section id="about" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <span class="turned2">О нас</span>
+                    </div>
+
+                    <div class="col-md-1 p-0">
+                        <span class="turned">О нас</span>
+                    </div>
+
+                    <a href="https://www.youtube.com/watch?v=Y8myZwl871Y&list=RDY8myZwl871Y&start_radio=1&pp=oAcB"
+                        data-fancybox="gallery" class="p-0 col-md-5 about-video"
+                        aria-label="Видео-презентация компании НСТ">
+
+                        <img src="/img/GettyImages-903993266.webp" class="video-wrapper" alt="Видео о компании НСТ"
+                            loading="lazy">
+
+                        <div class="mainplay">
+                            <div class="play-button play">
+                                <img class="play-black"
+                                    src="/img/play-icon-graphic-design-projects-260nw-1700043421__1_-removebg-preview (1).png"
+                                    alt="Кнопка воспроизведения" loading="lazy">
+                            </div>
+
+                            <div class="big-circ play">
+                                <img src="/img/cevre.png" alt="Графический элемент круга" loading="lazy">
+                            </div>
+
+                            <div class="small-circ play">
+                                <img src="/img/cevre2.png" alt="Графический элемент" loading="lazy">
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="col-md-5">
+                        <div class="about-right-side">
+
+                            <img src="/img/room2-removebg-preview-1 (1).png" alt="Офис компании НСТ" loading="lazy">
+
+                            <div class="about-text">
+
+                                <h2 class="horizantal-heading">О компании НСТ</h2>
+
+                                <div class="horizantal-paragraph">
+                                    <p class="horizantal-paragraph-typed-text">
+                                        <strong>НСТ</strong> — профессионально сопровождаем клиентов на торгах с 2016
+                                        года:
+                                        банкротство, госторги, арестованное и коммерческое имущество.
+                                        Выполняем полный цикл «под ключ»: анализ лота, подготовка документов,
+                                        участие в торгах и оформление собственности. Обеспечиваем безопасность
+                                        и выгоду до 70%. Сопровождаем инвесторов от выбора объекта до получения прибыли.
+                                        Ваш доход — наша работа.
+                                    </p>
+                                </div>
+
+                                <a class="themebtn modalBtn" href="#">
+                                    Получить бесплатную консультацию
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <div class="tile-categories__container container">
-            <h2 class="sec_title">
-                С ЧЕМ МЫ РАБОТАЕМ?
-            </h2>
+            <h2 class="sec_title">С ЧЕМ МЫ РАБОТАЕМ?</h2>
+
             <div class="tile-categories__tile-types">
                 <div class="tile-categories__tile-types__row tile-categories__tile-types__row-moscow active">
-                    <a href="https://whitewill.ru/developments"
-                        data-testid="tile_categories.moscow_new_real_estate_link"
+
+                    <!-- Жилая недвижимость -->
+                    <a href="#" data-testid="tile_categories.moscow_new_real_estate_link"
                         data-test-group="tile_categories.buttons"
-                        class="tile-categories__tile-types__item tile-categories__tile-types__item_full-mob modalBtn">
+                        class="tile-categories__tile-types__item tile-categories__tile-types__item_full-mob modalBtn"
+                        aria-label="Жилая недвижимость — скидки до 70%">
+
                         <div class="service_overlay">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum
-                                beatae?</p>
+                            <p>От студий до коттеджей — выкупаем объекты с торгов со скидкой до 70%.</p>
                         </div>
-                        <div class="tile-categories__tile-types__title">Квартиры и недвижимость</div>
-                        <div class="tile-categories__tile-types__item-background"><img loading="lazy"
+
+                        <div class="tile-categories__tile-types__title">Жилая недвижимость</div>
+
+                        <div class="tile-categories__tile-types__item-background">
+                            <img loading="lazy"
                                 src="/img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=280" srcset="
-/img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=280 280w,
-/img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=240 240w,
-/img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=146 146w,
-/img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=360 360w,
-/img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=185 185w"
-                                sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 146px, (max-width: 1620px) 240px, 280px"
-                                alt="new_building" data-testid="tile_categories.moscow_new_real_estate_image"
-                                data-autotest-image="" class="tile-categories__tile-types__item-background-img"></div>
+                            /img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=280 280w,
+                            /img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=240 240w,
+                            /img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=146 146w,
+                            /img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=360 360w,
+                            /img/6f761313faf08328f0f1553269746c0b-removebg-preview.png?width=185 185w"
+                                sizes="(max-width: 414px) 185px,(max-width: 767px) 360px,(max-width: 1024px) 146px,(max-width: 1620px) 240px,280px"
+                                alt="Жилая недвижимость" class="tile-categories__tile-types__item-background-img">
+                        </div>
+
                         <div
                             class="tile-categories__tile-types__item-background tile-categories__tile-types__item-background-mobile">
-                            <img loading="lazy"
-                                src="https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg1m.png?width=280"
-                                srcset="
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg1m.png?width=280 280w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg1m.png?width=240 240w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg1m.png?width=146 146w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg1m.png?width=360 360w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg1m.png?width=185 185w"
-                                sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 146px, (max-width: 1620px) 240px, 280px"
-                                alt="new_building" data-testid="tile_categories.moscow_new_real_estate_image_mobile"
-                                data-autotest-image="" class="tile-categories__tile-types__item-background-img">
+                            <img loading="lazy" src="/img/bg1m.webp?width=280" srcset="
+                            /img/bg1m.webp?width=280 280w,
+                            /img/bg1m.webp?width=240 240w,
+                            /img/bg1m.webp?width=146 146w,
+                            /img/bg1m.webp?width=360 360w,
+                            /img/bg1m.webp?width=185 185w"
+                                sizes="(max-width: 414px) 185px,(max-width: 767px) 360px,(max-width: 1024px) 146px,(max-width: 1620px) 240px,280px"
+                                alt="Жилая недвижимость mobile"
+                                class="tile-categories__tile-types__item-background-img">
                         </div>
                     </a>
-                    <a href="https://whitewill.ru/buy" data-testid="tile_categories.moscow_secondary_real_estate_link"
-                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item modalBtn">
+
+                    <!-- Транспорт и спецтехника -->
+                    <a href="#" data-testid="tile_categories.moscow_secondary_real_estate_link"
+                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item modalBtn"
+                        aria-label="Транспорт и спецтехника — выгодная покупка ниже рынка">
+
                         <div class="service_overlay">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum
-                                beatae?</p>
+                            <p>Авто, грузовики и спецтехника — покупка по цене значительно ниже рынка.</p>
                         </div>
+
                         <div class="tile-categories__tile-types__title">Транспорт и спецтехника</div>
-                        <div class="tile-categories__tile-types__item-background"><img loading="lazy"
-                                src="/img/unnamed-removebg-preview.png?width=280" srcset="
-/img/unnamed-removebg-preview.png?width=280 280w,
-/img/unnamed-removebg-preview.png?width=240 240w,
-/img/unnamed-removebg-preview.png?width=146 146w,
-/img/unnamed-removebg-preview.png?width=360 360w,
-/img/unnamed-removebg-preview.png?width=185 185w"
-                                sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 146px, (max-width: 1620px) 240px, 280px"
-                                alt="secondary_real_estate"
-                                data-testid="tile_categories.moscow_secondary_real_estate_image" data-autotest-image=""
-                                class="tile-categories__tile-types__item-background-img"></div>
+
+                        <div class="tile-categories__tile-types__item-background">
+                            <img loading="lazy" src="/img/unnamed-removebg-preview.png?width=280" srcset="
+                            /img/unnamed-removebg-preview.png?width=280 280w,
+                            /img/unnamed-removebg-preview.png?width=240 240w,
+                            /img/unnamed-removebg-preview.png?width=146 146w,
+                            /img/unnamed-removebg-preview.png?width=360 360w,
+                            /img/unnamed-removebg-preview.png?width=185 185w"
+                                sizes="(max-width: 414px) 185px,(max-width: 767px) 360px,(max-width: 1024px) 146px,(max-width: 1620px) 240px,280px"
+                                alt="Транспорт и спецтехника" class="tile-categories__tile-types__item-background-img">
+                        </div>
+
                         <div
                             class="tile-categories__tile-types__item-background tile-categories__tile-types__item-background-mobile">
-                            <img loading="lazy"
-                                src="https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg2m.png?width=280"
-                                srcset="
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg2m.png?width=280 280w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg2m.png?width=240 240w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg2m.png?width=146 146w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg2m.png?width=360 360w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg2m.png?width=185 185w"
-                                sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 146px, (max-width: 1620px) 240px, 280px"
-                                alt="secondary_real_estate"
-                                data-testid="tile_categories.moscow_secondary_real_estate_image_mobile"
-                                data-autotest-image="" class="tile-categories__tile-types__item-background-img">
+                            <img loading="lazy" src="/img/bg2m.webp?width=280" srcset="
+                            /img/bg2m.webp?width=280 280w,
+                            /img/bg2m.webp?width=240 240w,
+                            /img/bg2m.webp?width=146 146w,
+                            /img/bg2m.webp?width=360 360w,
+                            /img/bg2m.webp?width=185 185w"
+                                sizes="(max-width: 414px) 185px,(max-width: 767px) 360px,(max-width: 1024px) 146px,(max-width: 1620px) 240px,280px"
+                                alt="Транспорт и спецтехника mobile"
+                                class="tile-categories__tile-types__item-background-img">
                         </div>
                     </a>
-                    <a href="https://whitewill.ru/rent" data-testid="tile_categories.moscow_rental_real_estate_link"
-                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item modalBtn">
+
+                    <!-- Коммерческая недвижимость -->
+                    <a href="#" data-testid="tile_categories.moscow_rental_real_estate_link"
+                        data-test-group="tile_categories.buttons" class="tile-categories__tile-types__item modalBtn"
+                        aria-label="Коммерческая недвижимость — офисы, склады, помещения">
+
                         <div class="service_overlay">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum
-                                beatae?</p>
+                            <p>Офисы, склады, помещения и здания — выгодное приобретение с торгов.</p>
                         </div>
-                        <div class="tile-categories__tile-types__title">Готовый бизнес</div>
-                        <div class="tile-categories__tile-types__item-background"><img loading="lazy"
-                                src="/img/faced-navigation-427-removebg-preview.png?width=280" srcset="
-/img/faced-navigation-427-removebg-preview.png?width=280 280w,
-/img/faced-navigation-427-removebg-preview.png?width=240 240w,
-/img/faced-navigation-427-removebg-preview.png?width=146 146w,
-/img/faced-navigation-427-removebg-preview.png?width=360 360w,
-/img/faced-navigation-427-removebg-preview.png?width=185 185w"
-                                sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 146px, (max-width: 1620px) 240px, 280px"
-                                alt="rental_real_estate" data-testid="tile_categories.moscow_rental_real_estate_image"
-                                data-autotest-image="" class="tile-categories__tile-types__item-background-img"></div>
+
+                        <div class="tile-categories__tile-types__title">Коммерческая недвижимость</div>
+
+                        <div class="tile-categories__tile-types__item-background">
+                            <img loading="lazy" src="/img/faced-navigation-427-removebg-preview.png?width=280" srcset="
+                            /img/faced-navigation-427-removebg-preview.png?width=280 280w,
+                            /img/faced-navigation-427-removebg-preview.png?width=240 240w,
+                            /img/faced-navigation-427-removebg-preview.png?width=146 146w,
+                            /img/faced-navigation-427-removebg-preview.png?width=360 360w,
+                            /img/faced-navigation-427-removebg-preview.png?width=185 185w"
+                                sizes="(max-width: 414px) 185px,(max-width: 767px) 360px,(max-width: 1024px) 146px,(max-width: 1620px) 240px,280px"
+                                alt="Коммерческая недвижимость"
+                                class="tile-categories__tile-types__item-background-img">
+                        </div>
+
                         <div
                             class="tile-categories__tile-types__item-background tile-categories__tile-types__item-background-mobile">
-                            <img loading="lazy"
-                                src="https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg3m.png?width=280"
-                                srcset="
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg3m.png?width=280 280w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg3m.png?width=240 240w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg3m.png?width=146 146w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg3m.png?width=360 360w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/tile-categories/bg3m.png?width=185 185w"
-                                sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 146px, (max-width: 1620px) 240px, 280px"
-                                alt="rental_real_estate"
-                                data-testid="tile_categories.moscow_rental_real_estate_image_mobile"
-                                data-autotest-image="" class="tile-categories__tile-types__item-background-img">
+                            <img loading="lazy" src="/img/bg3m.webp?width=280" srcset="
+                            /img/bg3m.webp?width=280 280w,
+                            /img/bg3m.webp?width=240 240w,
+                            /img/bg3m.webp?width=146 146w,
+                            /img/bg3m.webp?width=360 360w,
+                            /img/bg3m.webp?width=185 185w"
+                                sizes="(max-width: 414px) 185px,(max-width: 767px) 360px,(max-width: 1024px) 146px,(max-width: 1620px) 240px,280px"
+                                alt="Коммерческая недвижимость mobile"
+                                class="tile-categories__tile-types__item-background-img">
                         </div>
                     </a>
+
                 </div>
             </div>
         </div>
+
+        <!-- LEAD CARDS -->
         <div class="lead-cards__wrapp container">
             <div class="lead-cards">
-                <div data-popup="callback-sale" class="lead-card modalBtn">
+
+                <!-- Госимущество -->
+                <div data-popup="callback-sale" class="lead-card modalBtn"
+                    aria-label="Государственное имущество — выкуп с торгов">
                     <div class="service_overlay">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum beatae?
-                        </p>
+                        <p>Здания, помещения, техника и земельные участки — безопасный выкуп с торг.</p>
                     </div>
-                    <div class="lead-card__title"><span>Государственное и муниципальное имущество</span></div> <img
-                        loading="lazy" src="/img/noroot__2_-removebg-preview.png?width=280" srcset="
-/img/noroot__2_-removebg-preview.png?width=832 832w,
-/img/noroot__2_-removebg-preview.png?width=702 702w,
-/img/noroot__2_-removebg-preview.png?width=444 444w,
-/img/noroot__2_-removebg-preview.png?width=360 360w,
-/img/noroot__2_-removebg-preview.png?width=185 185w"
-                        sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 444px, (max-width: 1620px) 702px, 832px"
-                        alt="sell" class="is-desktop"> <img loading="lazy"
-                        src="https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-sale-mob.png?width=280"
-                        srcset="
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-sale-mob.png?width=832 832w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-sale-mob.png?width=702 702w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-sale-mob.png?width=444 444w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-sale-mob.png?width=360 360w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-sale-mob.png?width=185 185w"
-                        sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 444px, (max-width: 1620px) 702px, 832px"
-                        alt="sell" class="is-mobile">
+
+                    <div class="lead-card__title">
+                        <span>Государственное и муниципальное имущество</span>
+                    </div>
+
+                    <img loading="lazy" src="/img/noroot__2_-removebg-preview.png?width=280"
+                        alt="Государственное имущество" class="is-desktop">
+
+                    <img loading="lazy" src="/img/lead-sale-mob.webp?width=280" alt="Государственное имущество mobile"
+                        class="is-mobile">
                 </div>
-                <div data-popup="callback-rent" class="lead-card modalBtn">
+
+                <!-- Арестованное имущество -->
+                <div data-popup="callback-rent" class="lead-card modalBtn"
+                    aria-label="Арестованное имущество — сопровождаем покупку">
                     <div class="service_overlay">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus voluptatum beatae?
-                        </p>
+                        <p>Недвижимость, транспорт, земля и другие активы ФССП — покупка по минимальной цене.</p>
                     </div>
-                    <div class="lead-card__title"><span>Арестованное имущество</span></div> <img loading="lazy"
-                        src="/img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=280" srcset="
-/img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=832 832w,
-/img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=702 702w,
-/img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=444 444w,
-/img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=360 360w,
-/img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=185 185w"
-                        sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 444px, (max-width: 1620px) 702px, 832px"
-                        alt="rent" class="is-desktop"> <img loading="lazy"
-                        src="https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?width=280"
-                        srcset="
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?width=832 832w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?width=702 702w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?width=444 444w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?width=360 360w,
-https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?width=185 185w"
-                        sizes="(max-width: 414px) 185px, (max-width: 767px) 360px, (max-width: 1024px) 444px, (max-width: 1620px) 702px, 832px"
-                        alt="rent" class="is-mobile">
+
+                    <div class="lead-card__title">
+                        <span>Арестованное имущество</span>
+                    </div>
+
+                    <img loading="lazy"
+                        src="/img/Homeownership-realtor-handing-over-house-keys-removebg-preview.png?width=280"
+                        alt="Арестованное имущество" class="is-desktop">
+
+                    <img loading="lazy" src="/img/lead-rent-mob.webp?width=280" alt="Арестованное имущество mobile"
+                        class="is-mobile">
                 </div>
+
             </div>
         </div>
-        <section id="trading-risk">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold text-uppercase sec_title mb-3">
-                        ВЫ ДУМАЕТЕ, ЧТО ТОРГИ — ЭТО СЛОЖНО, РИСКОВАННО И ДОЛГО?
-                    </h2>
-                    <p class="sub-title mb-5">
-                        ВЫ ПРАВЫ! Если делать это самому без опыта и знаний системы:
-                    </p>
-                </div>
 
-
-                <div class="premium-block">
-                    <div class="premium-line">
-                        <span class="premium-bullet">01</span>
-                        <div class="premium-content">
-                            <h5>Раздробленность площадок</h5>
-                            <p>Более 100 торговых платформ. Каждая — со своими правилами, интерфейсом и требованиями к
-                                аккредитации.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="premium-line">
-                        <span class="premium-bullet">02</span>
-                        <div class="premium-content">
-                            <h5>Отказ в допуске из-за ошибки</h5>
-                            <p>Одна опечатка в документах → аккредитация не пройдена → вы вне торгов, а лот уходит
-                                конкуренту.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="premium-line">
-                        <span class="premium-bullet">03</span>
-                        <div class="premium-content">
-                            <h5>Юридические риски</h5>
-                            <p>Скрытые аресты, долги, обременения. Купите имущество, которое нельзя зарегистрировать →
-                                потеря задатка и инвестиций.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="premium-line">
-                        <span class="premium-bullet">04</span>
-                        <div class="premium-content">
-                            <h5>Потеря выгоды на торгах</h5>
-                            <p>Без стратегии легко переплатить или вовсе упустить объект из-за неопытности.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="premium-line">
-                        <span class="premium-bullet">05</span>
-                        <div class="premium-content">
-                            <h5>Трата времени впустую</h5>
-                            <p>Поиск действительно выгодных лотов требует часов анализа, доступа ко всем площадкам и
-                                опыта.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="premium-line">
-                        <span class="premium-bullet">06</span>
-                        <div class="premium-content">
-                            <h5>Провал на финальном этапе</h5>
-                            <p>Даже если выиграли, можно потерять лот из-за нарушения сроков оплаты, подписания актов
-                                или регистрации.</p>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section class="rent-fleet-section" aria-labelledby="rent_fleet">
-            <div class="container">
-                <h2 class="sec_title text-center">Наши преимущества</h2>
-                <div class="rent-fleet-grid">
-
-                    <div class="rent-fleet-item">
-                        <div class="rent-fleet-content">
-                            <h3 class="rent-fleet-title">
-                                <strong>Единая точка входа</strong> — вам не нужно разбираться в 100+ площадках. Мы
-                                работаем на всех — и подадим заявку от вашего имени.
-                            </h3>
-                            <div class="rent-fleet-icon"><i class="fa-solid fa-globe"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="rent-fleet-item">
-                        <div class="rent-fleet-content">
-                            <h3 class="rent-fleet-title">
-                                <strong>Ноль ошибок в документах</strong> — все заявки будут допущены!
-                            </h3>
-                            <div class="rent-fleet-icon"><i class="fa-solid fa-file-alt"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="rent-fleet-item">
-                        <div class="rent-fleet-content">
-                            <h3 class="rent-fleet-title">
-                                <strong>Проверка объектов до участия</strong>
-                            </h3>
-                            <div class="rent-fleet-icon"><i class="fa-solid fa-search"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="rent-fleet-item">
-                        <div class="rent-fleet-content">
-                            <h3 class="rent-fleet-title">
-                                <strong>Стратегия победы</strong> — ставим ставки по алгоритму, согласно опыту:
-                                выигрываем по выгодной для вас цене, не переплачивая.
-                            </h3>
-                            <div class="rent-fleet-icon"><i class="fa-solid fa-bullseye"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="rent-fleet-item">
-                        <div class="rent-fleet-content">
-                            <h3 class="rent-fleet-title">
-                                <strong>Экономия времени</strong> — вы не тратите дни на поиск. Мы подбираем лоты под
-                                ваш бюджет и цели.
-                            </h3>
-                            <div class="rent-fleet-icon"><i class="fa-solid fa-clock"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="rent-fleet-item">
-                        <div class="rent-fleet-content">
-                            <h3 class="rent-fleet-title">
-                                <strong>Сопровождение до регистрации</strong> — контролируем каждый срок: оплата, акты,
-                                передача, Росреестр. Никаких “упустил — потерял”.
-                                <br><br><strong>МЫ ДЕЛАЕМ результат</strong> — БОЛЕЕ 300 выигранных лотов. Вы получаете
-                                имущество — мы получаем ваше “спасибо”.
-                            </h3>
-                            <div class="rent-fleet-icon"><i class="fa-solid fa-trophy"></i></div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-        <section class="workflow">
-            <h2 class="sec_title">Наш процесс работы</h2>
-
-            <div class="workflow-line">
-                <div class="workflow-line-inner"></div>
-
-                <div class="workflow-step">
-                    <div class="dot">1</div>
-                    <div class="info">
-                        <h3>Подбираем лот</h3>
-                        <p>под ваш бюджет и цели</p>
-                    </div>
-                </div>
-
-                <div class="workflow-step">
-                    <div class="dot">2</div>
-                    <div class="info">
-                        <h3>Проверяем объект</h3>
-                    </div>
-                </div>
-
-                <div class="workflow-step">
-                    <div class="dot">3</div>
-                    <div class="info">
-                        <h3>Готовим все необходимые документы</h3>
-                        <p>без ошибок</p>
-                    </div>
-                </div>
-
-                <div class="workflow-step">
-                    <div class="dot">4</div>
-                    <div class="info">
-                        <h3>Выигрываем торги</h3>
-                        <p>по выгодной цене, без переплат</p>
-                    </div>
-                </div>
-
-                <div class="workflow-step">
-                    <div class="dot">5</div>
-                    <div class="info">
-                        <h3>Сопровождаем до ключей</h3>
-                        <p>оплата, передача, регистрация — под ключ</p>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- PRICING SECTION -->
         <section class="pricing-area" aria-labelledby="pricing-heading">
             <div class="container">
-                <h2 class="sec_title text-center">ТАРИФЫ — ПРОСТО, ЧЕСТНО, БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ
+                <h2 id="pricing-heading" class="sec_title text-center">
+                    ТАРИФЫ — ПРОСТО, ЧЕСТНО, БЕЗ СКРЫТЫХ ПЛАТЕЖЕЙ
                 </h2>
+
                 <div class="pricing_grid">
-                    <div class="pricing_card">
-                        <p>ТАРИФЫ</p>
-                        <span>ПРОБА</span>
+
+                    <!-- CARD 1 -->
+                    <article class="pricing_card" itemscope itemtype="https://schema.org/Offer">
+                        <p itemprop="category">ТАРИФЫ</p>
+                        <span itemprop="name">ПРОБА</span>
+
                         <h3>
-                            <span>8 000</span>
-                            <p>рублей</p>
+                            <span itemprop="price">8 000</span>
+                            <p itemprop="priceCurrency" content="RUB">рублей</p>
                         </h3>
-                        <div class="pricing_desc">
+
+                        <div class="pricing_desc" itemprop="description">
                             <p>
-                                <b>Для первого раза или проверки одного лота:</b> <br>
+                                <b style="margin-bottom: 20px; display: inline-block;">
+                                    Для первого раза или проверки одного лота:
+                                </b>
                                 1 участие в торгах + полное сопровождение до регистрации права собственности
                             </p>
                         </div>
+
                         <div class="pricing_bottom">
-                            <a class="themebtn" href="#">Оставить заявку</a>
+                            <a class="themebtn" href="#" aria-label="Оставить заявку на тариф ПРОБА">
+                                Оставить заявку
+                            </a>
                         </div>
-                    </div>
-                    <div class="pricing_card">
-                        <p>ТАРИФЫ</p>
-                        <span>СТАРТ</span>
+                    </article>
+
+                    <!-- CARD 2 -->
+                    <article class="pricing_card" itemscope itemtype="https://schema.org/Offer">
+                        <p itemprop="category">ТАРИФЫ</p>
+                        <span itemprop="name">СТАРТ</span>
+
                         <h3>
-                            <span>20 000</span>
-                            <p>рублей</p>
+                            <span itemprop="price">20 000</span>
+                            <p itemprop="priceCurrency" content="RUB">рублей</p>
                         </h3>
-                        <div class="pricing_desc">
+
+                        <div class="pricing_desc" itemprop="description">
                             <p>
-                                <b>Для тех, кто хочет начать участвовать регулярно:</b> <br>
-                                2–5 участий + поиск лотов в нужной вам локации + сопровождение до победы
-                                <br>
-                                -------------------------------
-                                <br>
-                                ТОП-выбор клиентов— 73% выбирают этот пакет
+                                <b style="margin-bottom: 20px; display: inline-block;">
+                                    Для тех, кто хочет начать участвовать регулярно:
+                                </b>
+                                2–5 участий + поиск лотов в нужной локации + сопровождение до победы
+                                <br><br>
+                                <span style="font-weight:600;">TOP-выбор клиентов — 73% выбирают этот пакет</span>
                             </p>
                         </div>
+
                         <div class="pricing_bottom">
-                            <a class="themebtn" href="#">Оставить заявку</a>
+                            <a class="themebtn" href="#" aria-label="Оставить заявку на тариф СТАРТ">
+                                Оставить заявку
+                            </a>
                         </div>
-                    </div>
-                    <div class="pricing_card">
-                        <p>ТАРИФЫ</p>
-                        <span>ИНВЕСТОР</span>
+                    </article>
+
+                    <!-- CARD 3 -->
+                    <article class="pricing_card" itemscope itemtype="https://schema.org/Offer">
+                        <p itemprop="category">ТАРИФЫ</p>
+                        <span itemprop="name">ИНВЕСТОР</span>
+
                         <h3>
-                            <span>30 000</span>
-                            <p>рублей</p>
+                            <span itemprop="price">30 000</span>
+                            <p itemprop="priceCurrency" content="RUB">рублей</p>
                         </h3>
-                        <div class="pricing_desc">
+
+                        <div class="pricing_desc" itemprop="description">
                             <p>
-                                <b>Для покупки с целью перепродажи:</b> <br>
+                                <b style="margin-bottom: 20px; display: inline-block;">
+                                    Для покупки с целью перепродажи:
+                                </b>
                                 6–10 участий + подбор объектов под перепродажу + полное сопровождение сделки
                             </p>
                         </div>
+
                         <div class="pricing_bottom">
-                            <a class="themebtn" href="#">Оставить заявку</a>
+                            <a class="themebtn" href="#" aria-label="Оставить заявку на тариф ИНВЕСТОР">
+                                Оставить заявку
+                            </a>
                         </div>
-                    </div>
-                    <div class="pricing_card">
-                        <p>ТАРИФЫ</p>
-                        <span>VIP ИНВЕСТ</span>
+                    </article>
+
+                    <!-- CARD 4 -->
+                    <article class="pricing_card" itemscope itemtype="https://schema.org/Offer">
+                        <p itemprop="category">ТАРИФЫ</p>
+                        <span itemprop="name">VIP ИНВЕСТ</span>
+
                         <h3>
-                            <span>50 000</span>
-                            <p>рублей</p>
+                            <span itemprop="price">50 000</span>
+                            <p itemprop="priceCurrency" content="RUB">рублей</p>
                         </h3>
-                        <div class="pricing_desc">
+
+                        <div class="pricing_desc" itemprop="description">
                             <p>
-                                <b>Полный цикл: от покупки до продажи —</b> <br>
-                                Полный цикл: от покупки до продажи — мы всё сделаем за вас
-                                . Персональный поиск объектов с гарантированным доходом при перепродаже
-                                . Полное сопровождение: от участия в торгах — до передачи денег от продажи вам
+                                <b style="margin-bottom: 20px; display: inline-block;">
+                                    Полный цикл: от покупки до продажи
+                                </b>
+                                Мы всё сделаем за вас
                             </p>
+
+                            <ul style="padding-left: 20px;">
+                                <li style="list-style: disc;">
+                                    Персональный поиск объектов с гарантированным доходом
+                                </li>
+                                <li style="list-style: disc;">
+                                    Полное сопровождение: от участия в торгах до передачи денег после продажи
+                                </li>
+                            </ul>
                         </div>
+
                         <div class="pricing_bottom">
-                            <a class="themebtn" href="#">Оставить заявку</a>
+                            <a class="themebtn" href="#" aria-label="Оставить заявку на тариф VIP ИНВЕСТ">
+                                Оставить заявку
+                            </a>
                         </div>
-                    </div>
+                    </article>
+
                 </div>
             </div>
         </section>
-        <section class="advantages">
+
+        <section class="advantages" aria-labelledby="advantages-heading">
             <div class="container">
+
+                <!-- TOP SECTION -->
                 <div class="advantage-top" align="center">
                     <div class="container">
                         <div class="advantage-text">
-                            <h2 class="sec_title">ПОЧЕМУ МЫ — ВАШИ ЛУЧШИЕ и НАДЕЖНЫЕ АГЕНТЫ НА ТОРГАХ?</h2>
-                            <span><strong>Мы</strong> — не посредники и не "юристы на час". <br></span>
-                            <span><strong>Мы</strong> — ваши официальные представители с 2016 года.<br></span>
+                            <h2 id="advantages-heading" class="sec_title">
+                                ПОЧЕМУ МЫ — ВАШИ ЛУЧШИЕ и НАДЕЖНЫЕ АГЕНТЫ НА ТОРГАХ?
+                            </h2>
+                            <p>
+                                <strong>Мы</strong> — не посредники и не "юристы на час".
+                            </p>
+                            <p>
+                                <strong>Мы</strong> — ваши официальные представители с 2016 года.
+                            </p>
                         </div>
                     </div>
                 </div>
+
+                <!-- BOTTOM SECTION -->
                 <div class="advantage-bottom">
                     <div class="row advantage-row">
-                        <div class="advantage-box">
+
+                        <!-- CARD 1 -->
+                        <article class="advantage-box">
                             <div class="advantage-box-content">
                                 <i class="fa-solid fa-trophy" aria-hidden="true"></i>
                                 <span>300+ выигранных лотов</span>
                             </div>
                             <p>Мы помогли клиентам выиграть более 300 лотов — гарантированный результат и опыт.</p>
-                        </div>
+                        </article>
 
-                        <div class="advantage-box">
+                        <!-- CARD 2 -->
+                        <article class="advantage-box">
                             <div class="advantage-box-content">
                                 <i class="fa-solid fa-coins" aria-hidden="true"></i>
                                 <span>500+ млн ₽ — сумма наших сделок</span>
                             </div>
                             <p>Общая стоимость выигранных объектов превышает 500 миллионов рублей.</p>
-                        </div>
+                        </article>
 
-                        <div class="advantage-box">
+                        <!-- CARD 3 -->
+                        <article class="advantage-box">
                             <div class="advantage-box-content">
                                 <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
                                 <span>9 лет на рынке — знаем каждую ловушку</span>
                             </div>
                             <p>9 лет опыта участия в торгах — мы знаем все подводные камни и действуем уверенно.</p>
-                        </div>
+                        </article>
 
-                        <div class="advantage-box">
+                        <!-- CARD 4 -->
+                        <article class="advantage-box">
                             <div class="advantage-box-content">
                                 <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
                                 <span>Работаем по договору — с гарантиями и ответственностью</span>
                             </div>
                             <p>Все условия фиксируются официально — прозрачность и ответственность на каждом этапе.</p>
-                        </div>
+                        </article>
 
-                        <div class="advantage-box">
+                        <!-- CARD 5 -->
+                        <article class="advantage-box">
                             <div class="advantage-box-content">
                                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                                 <span>Прозрачность на каждом шаге</span>
                             </div>
                             <p>Предоставляем отчёты, скриншоты, фото и чеки — вы видите весь процесс изнутри.</p>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="trading-risk" aria-labelledby="trading-risk-title">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase sec_title mb-3" id="trading-risk-title">
+                        ВЫ ДУМАЕТЕ, ЧТО ТОРГИ — ЭТО СЛОЖНО, РИСКОВАННО И ДОЛГО?
+                    </h2>
+
+                    <p class="sub-title mb-5">
+                        ВЫ ПРАВЫ! Если делать это самому без опыта и знаний системы:
+                    </p>
+                </div>
+
+                <div class="premium-block" role="list">
+
+                    <div class="premium-line" role="listitem">
+                        <span class="premium-bullet">01</span>
+                        <div class="premium-content">
+                            <h3>Раздробленность площадок</h3>
+                            <p>Более 100 торговых платформ, каждая со своими правилами, интерфейсом и условиями
+                                аккредитации.</p>
+                        </div>
+                    </div>
+
+                    <div class="premium-line" role="listitem">
+                        <span class="premium-bullet">02</span>
+                        <div class="premium-content">
+                            <h3>Отказ в допуске из-за ошибки</h3>
+                            <p>Даже одна опечатка в документах может привести к отказу в аккредитации, и лот уйдёт
+                                конкуренту.</p>
+                        </div>
+                    </div>
+
+                    <div class="premium-line" role="listitem">
+                        <span class="premium-bullet">03</span>
+                        <div class="premium-content">
+                            <h3>Юридические риски</h3>
+                            <p>Скрытые аресты, долги, обременения. Неверная покупка ведет к риску потери задатка и
+                                инвестиций.</p>
+                        </div>
+                    </div>
+
+                    <div class="premium-line" role="listitem">
+                        <span class="premium-bullet">04</span>
+                        <div class="premium-content">
+                            <h3>Потеря выгоды на торгах</h3>
+                            <p>Без чёткой стратегии легко переплатить или потерять объект из-за неопытности.</p>
+                        </div>
+                    </div>
+
+                    <div class="premium-line" role="listitem">
+                        <span class="premium-bullet">05</span>
+                        <div class="premium-content">
+                            <h3>Трата времени впустую</h3>
+                            <p>Поиск по всем площадкам требует часов анализа и опыта, чтобы найти действительно выгодные
+                                лоты.</p>
+                        </div>
+                    </div>
+
+                    <div class="premium-line" role="listitem">
+                        <span class="premium-bullet">06</span>
+                        <div class="premium-content">
+                            <h3>Провал на финальном этапе</h3>
+                            <p>Даже победив в торгах, можно потерять лот из-за нарушения сроков оплаты, подписания актов
+                                или регистрации.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="rent-fleet-section" aria-labelledby="rent_fleet">
+            <div class="container">
+
+                <h2 class="sec_title text-center" id="rent_fleet">
+                    Наши преимущества
+                </h2>
+
+                <div class="rent-fleet-grid" role="list">
+
+                    <div class="rent-fleet-item" role="listitem">
+                        <div class="rent-fleet-content">
+                            <h3 class="rent-fleet-title">
+                                <strong>Единая точка входа</strong> — вам не нужно разбираться в 100+ площадках.
+                                Мы работаем на всех и подадим заявку от вашего имени.
+                            </h3>
+                            <div class="rent-fleet-icon">
+                                <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-fleet-item" role="listitem">
+                        <div class="rent-fleet-content">
+                            <h3 class="rent-fleet-title">
+                                <strong>Ноль ошибок в документах</strong> — все заявки будут допущены!
+                            </h3>
+                            <div class="rent-fleet-icon">
+                                <i class="fa-solid fa-file-alt" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-fleet-item" role="listitem">
+                        <div class="rent-fleet-content">
+                            <h3 class="rent-fleet-title">
+                                <strong>Проверка объектов до участия</strong>
+                            </h3>
+                            <div class="rent-fleet-icon">
+                                <i class="fa-solid fa-search" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-fleet-item" role="listitem">
+                        <div class="rent-fleet-content">
+                            <h3 class="rent-fleet-title">
+                                <strong>Стратегия победы</strong> — используем алгоритм, основанный на опыте:
+                                делаем ставки так, чтобы выиграть по выгодной цене и не переплачивать.
+                            </h3>
+                            <div class="rent-fleet-icon">
+                                <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-fleet-item" role="listitem">
+                        <div class="rent-fleet-content">
+                            <h3 class="rent-fleet-title">
+                                <strong>Экономия времени</strong> — вы не тратите дни на поиск.
+                                Мы подбираем лоты под ваш бюджет и ваши цели.
+                            </h3>
+                            <div class="rent-fleet-icon">
+                                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-fleet-item" role="listitem">
+                        <div class="rent-fleet-content">
+                            <h3 class="rent-fleet-title">
+                                <strong>Сопровождение до регистрации</strong> — контролируем каждый этап:
+                                оплату, акты, передачу, регистрацию в Росреестре. Никаких ошибок по срокам.
+                                <br><br>
+                                <strong>Мы делаем результат</strong> — более 300 выигранных лотов.
+                                Вы получаете имущество — мы получаем ваше “спасибо”.
+                            </h3>
+                            <div class="rent-fleet-icon">
+                                <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="workflow" aria-labelledby="workflow-heading">
+            <div class="container">
+
+                <h2 class="sec_title" id="workflow-heading">Наш процесс работы</h2>
+
+                <div class="workflow-line" role="list">
+
+                    <div class="workflow-step" role="listitem">
+                        <div class="dot">1</div>
+                        <div class="info">
+                            <h3>Подбираем лот</h3>
+                            <p>под ваш бюджет и цели</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step" role="listitem">
+                        <div class="dot">2</div>
+                        <div class="info">
+                            <h3>Проверяем объект</h3>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step" role="listitem">
+                        <div class="dot">3</div>
+                        <div class="info">
+                            <h3>Готовим все необходимые документы</h3>
+                            <p>без ошибок</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step" role="listitem">
+                        <div class="dot">4</div>
+                        <div class="info">
+                            <h3>Выигрываем торги</h3>
+                            <p>по выгодной цене, без переплат</p>
+                        </div>
+                    </div>
+
+                    <div class="workflow-step" role="listitem">
+                        <div class="dot">5</div>
+                        <div class="info">
+                            <h3>Сопровождаем до ключей</h3>
+                            <p>оплата, передача, регистрация — под ключ</p>
                         </div>
                     </div>
 
@@ -855,74 +992,31 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
             </div>
         </section>
         <!-- SPECIAL OFFER COUNTDOWN SECTION -->
-        <section class="special-offer-area">
+        <section class="special-offer-area" aria-labelledby="special-offer-heading">
             <div class="special-offer-container container">
                 <div class="special_grid">
+
                     <div class="p-5">
-                        <h2 class="special-offer-title">СПЕЦПРЕДЛОЖЕНИЕ ДО <br><span id="countdown-date">[DATE]</span>
+                        <h2 class="special-offer-title" id="special-offer-heading">
+                            СПЕЦПРЕДЛОЖЕНИЕ ДО <br><span id="countdown-date">[DATE]</span>
                         </h2>
                         <p class="special-offer-text">
-                            Скидка 50% на услуги агента при заказе до <span id="countdown-date-2">[DATE]</span>!<br>
-                            Добавить счетчик: осталось <br><span class="fs-1" id="countdown-timer">00д 00ч 00м
-                                00с</span> <br>до конца акции!
+                            Получите скидку 50% на услуги агента при заказе до <span
+                                id="countdown-date-2">[DATE]</span>!<br>
+                            Осталось: <span class="fs-1" id="countdown-timer">00д 00ч 00м 00с</span> до конца акции.
                         </p>
-                        <a class="themebtn modalBtn" href="#">Забронировать скидку 50%</a>
+                        <a class="themebtn modalBtn" href="#"
+                            title="Забронировать скидку 50% на услуги агента">Забронировать скидку 50%</a>
                     </div>
-                    <img src="https://petrieflom.law.harvard.edu/wp-content/uploads/2021/10/shutterstock_1420924517-scaled-e1634670981407.jpg"
-                        alt="">
+
+                    <img src="/img/shutterstock_1420924517-scaled-e1634670981407.jpg"
+                        alt="Спецпредложение агента: скидка 50% до [DATE]" loading="lazy">
+
                 </div>
             </div>
         </section>
-        <section id="about" data-aos="fade-up" data-aos-duration="1000">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <span class="turned2">О нас</span>
-                    </div>
-                    <div class="col-md-1 p-0">
-                        <span class="turned">О нас</span>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=Y8myZwl871Y&list=RDY8myZwl871Y&start_radio=1&pp=oAcB"
-                        data-fancybox="gallery" class="p-0 col-md-5 about-video">
-                        <img src="https://www.americanprogress.org/wp-content/uploads/sites/2/2018/02/GettyImages-903993266.jpg?w=1040"
-                            class="video-wrapper" alt="О нас">
-                        <div class="mainplay">
-                            <div class="play-button play">
-                                <img class="play-black"
-                                    src="/img/play-icon-graphic-design-projects-260nw-1700043421__1_-removebg-preview (1).png"
-                                    alt="НСТ play-btn">
-                            </div>
-                            <div class="big-circ play">
-                                <img src="/img/cevre.png" alt="НСТ">
-                            </div>
-                            <div class="small-circ play">
-                                <img src="/img/cevre2.png" alt="НСТ">
-                            </div>
-                        </div>
-                    </a>
-                    <div class="col-md-5">
-                        <div class="about-right-side">
-                            <img src="/img/room2-removebg-preview-1 (1).png" alt="О нас">
-                            <div class="about-text">
-                                <h3 class="horizantal-heading">О нас</h3>
-                                <div class="horizantal-paragraph">
-                                    <p class="horizantal-paragraph-typed-text">
-                                        <strong>НСТ</strong> — Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Officia totam quisquam numquam repellendus sunt ullam, maiores quam iure! Minus
-                                        accusantium magni deleniti quam modi doloremque. Illum qui fugiat voluptates
-                                        sed.
-                                    </p>
-                                </div>
-                                <a class="themebtn modalBtn" href="#">
-                                    Получить бесплатную консультацию
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="container group">
+
+        <!-- <div class="container group">
             <div class="text-center">
                 <h2 class="sec_title">
                     Что говорят наши клиенты
@@ -1256,43 +1350,44 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                     </div>
                 </div>
             </div>
-        </div>
-        <section id="contact">
+        </div> -->
+        <section id="contact" aria-labelledby="contact-heading">
             <div class="contact-container">
                 <div class="contact-wrapper">
-                    <img class="corner-img left" src="/img/left-corner.webp" alt="Laocar" loading="lazy" width="75"
-                        height="75">
-                    <img class="corner-img right" src="/img/right-corner.webp" alt="Laocar" loading="lazy" width="75"
-                        height="75">
+                    <img class="corner-img left" src="/img/left-corner.webp" alt="Декоративный элемент слева Laocar"
+                        loading="lazy" width="75" height="75">
+
+                    <img class="corner-img right" src="/img/right-corner.webp" alt="Декоративный элемент справа Laocar"
+                        loading="lazy" width="75" height="75">
 
                     <div class="contact-grid">
+
                         <div class="contact-text">
                             <div class="contact-content">
-                                <h3 class="contact-title">
-                                    <span id="contact">Есть вопросы? Звони!</span>
-                                    <p>Бесплатная консультация и помощь эксперта в выборе автомобиля по телефону:</p>
-                                    <a href="tel:+8 (919) 440-88-85" class="contact-phone">+8 (919) 440-88-85</a>
-                                </h3>
+                                <h2 id="contact-heading">Есть вопросы? Звони!</h2>
+                                <p>Бесплатная консультация и помощь эксперта в выборе автомобиля по телефону:</p>
+                                <a href="tel:+89194408885" class="contact-phone" title="Позвонить эксперту Laocar">+8
+                                    (919) 440-88-85</a>
                             </div>
 
                             <div class="contact-buttons">
-                                <a href="https://api.whatsapp.com/message/WWLWPOUFFCXTF1?autoload=1&amp;app_absent=0"
-                                    target="_blank" rel="noopener noreferrer nofollow" class="btn-whatsapp">Написать в
-                                    WhatsApp</a>
-                                <a href="https://t.me/+8 (919) 440-88-85" target="_blank"
-                                    rel="noopener noreferrer nofollow" class="btn-telegram">Написать в Telegram</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer nofollow" class="btn-whatsapp"
+                                    title="Написать в WhatsApp эксперту Laocar">Написать в WhatsApp</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer nofollow" class="btn-telegram"
+                                    title="Написать в Telegram эксперту Laocar">Написать в Telegram</a>
                             </div>
                         </div>
 
                         <div class="contact-image">
-                            <img src="https://wallpapers.com/images/hd/golden-scales-of-justice-png-88-azphgfiwbixxhswd.png"
-                                alt="Laocar" loading="lazy" width="480" height="287">
+                            <img src="/img/golden-scales-of-justice-png-88-azphgfiwbixxhswd (1).png"
+                                alt="Справедливые условия покупки автомобиля Laocar" loading="lazy" width="480"
+                                height="287">
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- <section class="blog-section">
             <h2 class="sec_title pb-4">Последние статьи</h2>
@@ -1346,7 +1441,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 </div>
             </div>
         </section> -->
-        <section id="call-to-action" data-aos="fade-up" data-aos-duration="1000">
+        <!-- <section id="call-to-action" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -1403,76 +1498,53 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer>
+    <footer aria-labelledby="footer-heading">
         <div class="container">
+            <h2 id="footer-heading" class="visually-hidden">Футер сайта Laocar — контакты, адреса, банковские реквизиты
+            </h2>
+
             <div class="rv-1-footer-top rv-6-footer-top">
                 <div class="row gy-4 gy-sm-5 rv-6-footer-top__row">
+
                     <div class="col-xl-4 col-md-6">
                         <div class="rv-1-footer__about">
-                            <a href="/"><img width="100%" src="/img/nstlogoremove.png" alt="Logo" class="logo"></a>
+                            <a href="/" title="Главная Laocar">
+                                <img width="100%" src="/img/nstlogoremove.png" alt="Логотип Laocar" class="logo">
+                            </a>
                             <p class="rv-1-footer__about-txt">
                                 Наша компания предоставляет полный спектр услуг по недвижимости и коммерческим объектам,
                                 обеспечивая профессиональный подход и соответствие всем стандартам.
                             </p>
-                            <!-- Ünvanlar -->
+
                             <div class="footer-addresses">
                                 <div class="footer-address">
-                                    <i class="fa-solid fa-building"></i>
+                                    <i class="fa-solid fa-building" aria-hidden="true"></i>
                                     <div>
                                         <strong>Юридический адрес</strong><br>
                                         125315, г. Москва, Большой Коптевский проезд, д. 3 стр 2, помещ. 101
                                     </div>
                                 </div>
-
                                 <div class="footer-address">
-                                    <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                     <div>
                                         <strong>Фактический адрес / Почтовый адрес</strong><br>
                                         614007, г. Пермь, ул. 1-я Красноармейская, д. 3, офис 5
                                     </div>
                                 </div>
-
                                 <div class="footer-address">
-                                    <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                     <div>
                                         <strong>Электронная почта</strong><br>
-                                        <a href="mailto:dom.invest01@ya.ru">dom.invest01@ya.ru</a>
+                                        <a href="mailto:dom.invest01@ya.ru" title="Написать на dom.invest01@ya.ru">
+                                            dom.invest01@ya.ru
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Bank məlumatları -->
-                            <div class="footer-bank">
-                                <h4><i class="fa-solid fa-landmark"></i> Банковские реквизиты</h4>
-                                <table class="bank-table">
-                                    <tr>
-                                        <td>БИК</td>
-                                        <td>044525104</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Наименование банка</td>
-                                        <td>ООО «Банк Точка»</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ИНН банка</td>
-                                        <td>9721194461</td>
-                                    </tr>
-                                    <tr>
-                                        <td>КПП банка</td>
-                                        <td>997950001</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Расчетный счет</td>
-                                        <td>40702810120000213585</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Корреспондентский счет</td>
-                                        <td>30101810745374525104</td>
-                                    </tr>
-                                </table>
-                            </div>
+
                             <div class="rv-1-socials">
                                 <ul class="d-flex flex-column gap-1">
                                     <li class="d-flex align-items-center gap-2">
@@ -1484,99 +1556,67 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                                                     d="M15.6818 19.3376C15.8864 19.4824 16.1501 19.5186 16.3852 19.4297C16.6203 19.3401 16.7931 19.1393 16.8452 18.8959C17.3974 16.3009 18.7368 9.73257 19.2395 7.372C19.2776 7.19409 19.214 7.00918 19.0742 6.89035C18.9345 6.77153 18.7407 6.73722 18.5678 6.8014C15.9035 7.78756 7.69838 10.8662 4.34465 12.1071C4.13178 12.1859 3.99326 12.3905 4.00025 12.6148C4.00788 12.8398 4.15911 13.0348 4.37705 13.1003C5.88109 13.5502 7.85533 14.176 7.85533 14.176C7.85533 14.176 8.77795 16.9624 9.25896 18.3793C9.31933 18.5573 9.45848 18.6971 9.64212 18.7453C9.82512 18.793 10.0208 18.7428 10.1574 18.6138C10.9301 17.8844 12.1247 16.7565 12.1247 16.7565C12.1247 16.7565 14.3944 18.4206 15.6818 19.3376ZM8.68582 13.824L9.75268 17.343L9.98969 15.1145C9.98969 15.1145 14.1116 11.3967 16.4614 9.27762C16.53 9.21535 16.5396 9.11114 16.4824 9.03806C16.4258 8.96499 16.3216 8.94784 16.2435 8.9974C13.5201 10.7365 8.68582 13.824 8.68582 13.824Z"
                                                     fill="white"></path>
                                             </g>
-                                            <defs>
-                                                <clipPath id="clip0_161_9620">
-                                                    <rect width="16" height="14" fill="white"
-                                                        transform="translate(4 6)">
-                                                    </rect>
-                                                </clipPath>
-                                            </defs>
                                         </svg>
-                                        <a href="https://t.me/+8 (919) 440-88-85" target="_blank"
+                                        <a href="https://t.me/+89194408885" target="_blank"
                                             rel="noopener noreferrer nofollow"
-                                            class="transition text-white fs-6 fw-medium">Telegram</a>
+                                            class="transition text-white fs-6 fw-medium"
+                                            aria-label="Написать в Telegram">
+                                            Telegram
+                                        </a>
                                     </li>
                                     <li class="d-flex align-items-center gap-2">
                                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="26" height="26" rx="4" fill="#009A5C"></rect>
-                                            <g clip-path="url(#clip0_161_9673)">
-                                                <path
-                                                    d="M17.4123 13.7052C17.3797 13.6894 16.1567 13.083 15.9394 13.0042C15.8507 12.9721 15.7556 12.9408 15.6545 12.9408C15.4894 12.9408 15.3507 13.0237 15.2426 13.1865C15.1205 13.3693 14.7506 13.8046 14.6363 13.9346C14.6214 13.9518 14.6011 13.9723 14.5889 13.9723C14.5779 13.9723 14.3886 13.8938 14.3313 13.8688C13.0195 13.2949 12.0237 11.9151 11.8872 11.6824C11.8677 11.6489 11.8668 11.6337 11.8667 11.6337C11.8715 11.616 11.9156 11.5715 11.9384 11.5485C12.005 11.4821 12.0771 11.3947 12.147 11.31C12.18 11.2699 12.2131 11.2298 12.2456 11.192C12.3469 11.0733 12.392 10.9811 12.4443 10.8744L12.4717 10.819C12.5994 10.5636 12.4903 10.348 12.4551 10.2784C12.4262 10.2202 11.9098 8.9653 11.8549 8.83346C11.7229 8.51532 11.5484 8.36719 11.306 8.36719C11.2835 8.36719 11.306 8.36719 11.2117 8.37119C11.0968 8.37607 10.4713 8.45899 10.1947 8.63454C9.90144 8.82073 9.40527 9.41424 9.40527 10.458C9.40527 11.3974 9.99729 12.2844 10.2515 12.6217C10.2578 12.6302 10.2694 12.6475 10.2862 12.6723C11.2597 14.1037 12.4732 15.1646 13.7034 15.6595C14.8877 16.1358 15.4486 16.1909 15.7674 16.1909C15.9013 16.1909 16.0087 16.1803 16.1033 16.1709L16.1633 16.1652C16.5724 16.1286 17.4715 15.6595 17.676 15.0872C17.8372 14.6365 17.8796 14.144 17.7724 13.9653C17.699 13.8438 17.5725 13.7826 17.4123 13.7052Z"
-                                                    fill="white"></path>
-                                                <path
-                                                    d="M13.5364 4C8.9932 4 5.29704 7.69386 5.29704 12.2342C5.29704 13.7027 5.68733 15.1402 6.42668 16.3983L5.01153 20.6017C4.98517 20.6801 5.00478 20.7667 5.06235 20.8257C5.1039 20.8685 5.16028 20.8915 5.21784 20.8915C5.2399 20.8915 5.26212 20.8881 5.2838 20.8812L9.63659 19.4884C10.8277 20.1292 12.174 20.4675 13.5365 20.4675C18.0792 20.4676 21.775 16.7741 21.775 12.2342C21.775 7.69386 18.0792 4 13.5364 4ZM13.5364 18.7523C12.2544 18.7523 11.0126 18.3795 9.94524 17.6743C9.90934 17.6505 9.86768 17.6383 9.82574 17.6383C9.80357 17.6383 9.78135 17.6417 9.75973 17.6487L7.57925 18.3466L8.28315 16.2555C8.30591 16.1878 8.29453 16.1132 8.25259 16.0555C7.43977 14.9371 7.0101 13.6158 7.0101 12.2342C7.0101 8.63968 9.93777 5.71525 13.5363 5.71525C17.1345 5.71525 20.0618 8.63968 20.0618 12.2342C20.0619 15.8283 17.1346 18.7523 13.5364 18.7523Z"
-                                                    fill="white"></path>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_161_9673">
-                                                    <rect width="17" height="17" fill="white"
-                                                        transform="translate(5 4)">
-                                                    </rect>
-                                                </clipPath>
-                                            </defs>
+                                            <path d="..." fill="white"></path>
                                         </svg>
-                                        <a href="https://api.whatsapp.com/message/WWLWPOUFFCXTF1?autoload=1&amp;app_absent=0"
-                                            target="_blank" rel="noopener noreferrer nofollow"
+                                        <a href="#" target="_blank" rel="noopener noreferrer nofollow"
                                             class="transition text-white fs-6 fw-medium"
-                                            aria-label="Написать в WhatsApp">WhatsApp</a>
+                                            aria-label="Написать в WhatsApp">
+                                            WhatsApp
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
 
                     <div class="col-xl-7 col-md-8 col-12">
-                        <div class="row gy-4">
-                            <div class="col-6 col-lg-4 col-xxs-12 has-anim">
-                                <div class="rv-1-footer-widget rv-6-footer-widget">
-                                    <span class="to-animate"></span>
-                                    <h5 class="rv-1-footer-widget__title">Недвижимость</h5>
-                                    <ul class="rv-6-footer-widget__links">
-                                        <li><a href="/apartments/">Квартиры и недвижимость — от студий до коттеджей, со
-                                                скидкой до 70%</a></li>
-                                        <li><a href="/transport/">Транспорт и спецтехника — авто, грузовики, экскаваторы
-                                                и т.д.</a></li>
-                                        <li><a href="/business/">Готовый бизнес — кафе, магазины, СТО, производство —
-                                                под ключ</a></li>
-                                        <li><a href="/government/">Государственное и муниципальное имущество — земля,
-                                                здания, объекты</a></li>
-                                        <li><a href="/arrested/">Арестованное имущество</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div id="map" aria-label="Карта расположения офисов Laocar"></div>
 
-                            <div class="col-6 col-lg-4 col-xxs-12 has-anim">
-                                <div class="rv-1-footer-widget rv-6-footer-widget">
-                                    <span class="to-animate"></span>
-                                    <h5 class="rv-1-footer-widget__title">Компания</h5>
-                                    <ul class="rv-6-footer-widget__links">
-                                        <li><a href="#">О нас</a></li>
-                                        <li><a href="#">Услуги</a></li>
-                                        <li><a href="#">Проекты</a></li>
-                                        <li><a href="#">Карьера</a></li>
-                                        <li><a href="#">Контакты</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-4 col-xxs-12 has-anim">
-                                <div class="rv-1-footer-widget rv-6-footer-widget">
-                                    <span class="to-animate"></span>
-                                    <h5 class="rv-1-footer-widget__title">Полезное</h5>
-                                    <ul class="rv-6-footer-widget__links">
-                                        <li><a href="#">Статьи</a></li>
-                                        <li><a href="#">Вопросы и ответы</a></li>
-                                        <li><a href="#">Команда</a></li>
-                                        <li><a href="#">Отзывы</a></li>
-                                        <li><a href="#">Обратная связь</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="footer-bank">
+                            <h4><i class="fa-solid fa-landmark" aria-hidden="true"></i> Банковские реквизиты</h4>
+                            <table class="bank-table">
+                                <tr>
+                                    <td>БИК</td>
+                                    <td>044525104</td>
+                                </tr>
+                                <tr>
+                                    <td>Наименование банка</td>
+                                    <td>ООО «Банк Точка»</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН банка</td>
+                                    <td>9721194461</td>
+                                </tr>
+                                <tr>
+                                    <td>КПП банка</td>
+                                    <td>997950001</td>
+                                </tr>
+                                <tr>
+                                    <td>Расчетный счет</td>
+                                    <td>40702810120000213585</td>
+                                </tr>
+                                <tr>
+                                    <td>Корреспондентский счет</td>
+                                    <td>30101810745374525104</td>
+                                </tr>
+                            </table>
                         </div>
 
-                        <div id="map"></div>
                     </div>
+
                 </div>
             </div>
 
@@ -1584,15 +1624,15 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
                 <div class="row gy-4 align-items-center">
                     <div class="col-md-7">
                         <p class="rv-2-copyright rv-1-copyright mb-0 text-center text-md-start">
-                            © 2025. Все права защищены.
+                            © 2025 Laocar. Все права защищены.
                         </p>
                     </div>
                     <div class="col-md-5">
                         <div class="rv-2-footer__nav">
-                            <a href="http://jeywastudio.com/">
-                                Дизайн, кадровая информация, тексты и фотографии, использованные на сайте, не подлежат
-                                распространению без письменного разрешения компании. Разработка сайта: <strong>Jeywa
-                                    Studio</strong>
+                            <a href="http://jeywastudio.com/" target="_blank" rel="noopener noreferrer nofollow"
+                                title="Разработка сайта Laocar">
+                                Дизайн, кадровая информация, тексты и фотографии на сайте защищены. Разработка сайта:
+                                <strong>Jeywa Studio</strong>
                             </a>
                         </div>
                     </div>
@@ -1600,6 +1640,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
             </div>
         </div>
     </footer>
+
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"
@@ -1670,7 +1711,7 @@ https://cdn.ww.estate/tp/s/whitewill.ru/images/illustrations/lead-rent-mob.png?w
             myMap.geoObjects.add(new ymaps.Placemark([58.003359, 56.266741], {}, {
                 iconLayout: "default#image",
                 iconImageHref: "/img/marker.png",
-                iconImageSize: [45, 50],
+                iconImageSize: [45, 58],
                 iconImageOffset: [-50, -100]
             }))
 

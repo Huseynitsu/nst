@@ -138,6 +138,10 @@ input[type=number] {
     background-color: #1e1d1fe1;
 }
 
+#image {
+    object-fit: contain;
+}
+
 .custommodal-body .submit-btn,
 .projects-full-story__form .submit-btn {
     background-color: #1e1d1f;
@@ -1269,7 +1273,6 @@ header .overlay {
 @media (max-width: 767px) {
     .first-screen {
         height: 35em;
-        padding-bottom: 5em
     }
 }
 
@@ -1306,9 +1309,8 @@ header .overlay {
 
 @media (max-width: 767px) {
     .first-screen__bg {
-        top: 2.5em;
         overflow: hidden;
-        height: 22.0625em
+        height: 100%
     }
 
     .first-screen__bg:before {
@@ -1446,7 +1448,7 @@ header .overlay {
     }
 
     .first-screen__title-item:nth-child(2) {
-        margin-left: 3.357em
+        margin-left: 0
     }
 }
 
@@ -2072,10 +2074,6 @@ header .overlay {
         background: linear-gradient(180deg, #2a2a30 0%, #4260fe 100%);
     }
 
-    .workflow-step {
-        margin-bottom: 60px;
-    }
-
     .info p {
         max-width: 100%;
     }
@@ -2086,6 +2084,7 @@ header .overlay {
     color: var(--color-white);
     position: relative;
     z-index: 1;
+    padding-top: 7.5rem;
 }
 
 .pricing_grid {
@@ -2146,9 +2145,9 @@ header .overlay {
         }
     }
 
+
     .pricing_desc {
         padding: 10px 20px;
-        text-align: center;
         font-size: 17px;
         height: 100%;
         background-color: #fff;
@@ -2170,7 +2169,7 @@ header .overlay {
 /*new advantages*/
 
 .advantages {
-    padding-top: 4.5rem;
+    padding-top: 7.5rem;
 }
 
 .advantage-text {
@@ -2251,7 +2250,7 @@ header .overlay {
 .special-offer-area {
     background: var(--color-black);
     color: var(--color-white);
-    padding: 7.5rem 20px;
+    padding: 0 20px 7.5rem 20px;
     text-align: center;
     position: relative;
 }
@@ -3287,3 +3286,420 @@ footer .has-anim .to-animate.reverse {
         width: 100%;
     }
 }
+
+/* ============================================================
+   RESPONSIVE EKLER (Mobil → Tablet → Desktop)
+   ============================================================ */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .first-screen .swiper-slide .themebtn:first-of-type {
+        padding: 15px;
+        font-size: 11px;
+    }
+
+    .first-screen .swiper-slide .themebtn:nth-of-type(2) {
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    .workflow-step {
+        width: 100%;
+    }
+
+    .turned {
+        writing-mode: horizontal-tb;
+        text-align: center;
+        opacity: 1;
+        width: 100%;
+        display: inline-block;
+        transform: none;
+    }
+
+    /* Header & Navigation */
+    .first-screen__content {
+        padding-bottom: 100px;
+        justify-content: center;
+    }
+
+    .first-screen__title-item {
+        font-size: 3.5rem;
+    }
+
+    /* Workflow */
+    .workflow-step {
+        min-height: 180px;
+    }
+
+    .dot {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    /* Pricing */
+    .pricing_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Advantages */
+    .advantage-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .advantage-text {
+        padding: 0;
+    }
+
+    .special_grid .p-5 {
+        padding: 15px 0 !important;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Rent fleet */
+    .rent-fleet-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Sticky social icons */
+    .sticky-icon {
+        width: 180px;
+    }
+
+    .sticky-icon a {
+        transform: translate(130px, 0);
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .sticky-icon a i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Genel */
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header & First Screen */
+    .first-screen {
+        height: 100vh;
+        min-height: 600px;
+    }
+
+    .first-screen__content {
+        padding-bottom: 80px;
+    }
+
+    .first-screen__title-item {
+        font-size: 2.5rem;
+    }
+
+    .first-screen__subtitle {
+        font-size: 1rem;
+        align-self: center;
+    }
+
+    .themebtn {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    /* Tile Categories (Services) */
+    .tile-categories__tile-types__row.active {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tile-categories__tile-types__item {
+        height: 120px;
+    }
+
+    .tile-categories__tile-types__title {
+        font-size: 1rem;
+    }
+
+    /* Lead Cards */
+    .lead-cards {
+        flex-direction: column;
+    }
+
+    .lead-card {
+        height: auto;
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .lead-card__title span {
+        font-size: 1.3rem;
+    }
+
+    /* Premium Block */
+    .premium-block {
+        padding-left: 1rem;
+    }
+
+    /* Rent Fleet */
+    .rent-fleet-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .rent-fleet-title {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    /* Workflow */
+    .workflow-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .workflow-line {
+        flex-direction: column;
+    }
+
+    .workflow-line-inner {
+        width: 2px;
+        height: 100%;
+        left: 50%;
+        transform: scaleY(0);
+    }
+
+    .workflow-step {
+        padding: 25px 15px;
+    }
+
+    .dot {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    /* Pricing */
+    .pricing_grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Advantages */
+    .advantage-row {
+        grid-template-columns: 1fr;
+    }
+
+    .advantage-box {
+        padding: 25px 15px;
+    }
+
+    .advantage-box-content i {
+        font-size: 40px;
+    }
+
+    /* Special Offer */
+    .special_grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* About Section */
+    .about-right-side {
+        right: 0;
+    }
+
+    .about-text {
+        width: 100%;
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .horizantal-heading {
+        font-size: 32px;
+    }
+
+    .about-video {
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    /* Reviews */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-column {
+        height: 600px;
+    }
+
+    .review-column.middle {
+        display: none;
+    }
+
+    .review-column.third {
+        display: none;
+    }
+
+    /* Blog */
+    .blog-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .btn-whatsapp,
+    .btn-telegram {
+        text-align: center;
+    }
+
+    /* Call to Action */
+    .big {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .little {
+        font-size: 16px;
+        width: 100% !important;
+    }
+
+    /* Footer */
+    .rv-6-footer-top__row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .rv-1-footer__about .logo {
+        max-width: 200px;
+    }
+
+    /* Floating buttons */
+    #main-div {
+        right: 15px;
+        bottom: 84px;
+    }
+
+    #main-button {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    /* Sticky social icons (sağ tarafta) */
+    .sticky-icon {
+        top: auto;
+        bottom: 20px;
+        right: 10px;
+        flex-direction: row;
+        width: auto;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 8px;
+        border-radius: 50px;
+        gap: 10px;
+    }
+
+    .sticky-icon a {
+        transform: translate(0, 0) !important;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+    }
+
+    .sticky-icon a span {
+        display: none;
+    }
+
+    /* mobil üçün yalnız ikon görünsün */
+
+    /* Modal */
+    .customModal {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .eye-modal__dialog {
+        width: 95vw;
+        padding: 20px;
+    }
+
+    .eye-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Çok küçük ekranlar (≤480px) */
+@media (max-width: 480px) {
+    .first-screen__title-item {
+        font-size: 2rem;
+    }
+
+    .themebtn {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+
+    .sec_title {
+        font-size: 1.8rem;
+    }
+
+    .workflow-title {
+        font-size: 28px;
+    }
+
+    .big {
+        font-size: 28px;
+    }
+
+    .horizantal-heading {
+        font-size: 26px;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .modal_both h2 {
+        font-size: 20px;
+    }
+
+    .modalbtn {
+        font-size: 12px;
+        padding: 12px;
+    }
+}
+
+/* ============================================================
+   MEVCUD BÜTÜN CSS-IN SONUNA YUXARIDAKI BLOKU ƏLAVƏ ETMƏK YETERLİDİR
+   ============================================================ */

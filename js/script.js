@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const openButton = document.querySelector(".modalBtn");
+    const openButtons = document.querySelectorAll(".modalBtn"); // Hamısı
     const closeButton = document.querySelector(".closeBtn");
     const modal = document.querySelector(".customModalContainer");
 
-    // Modal açmaq
-    openButton.addEventListener("click", () => {
-        modal.classList.add("show");
-        document.body.classList.add("no-scroll");
+    // Bütün modal açan düymələrə klik event-i ver
+    openButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            modal.classList.add("show");
+            document.body.classList.add("no-scroll");
+        });
     });
 
     // Modal bağlamaq (X düyməsi)
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
 
 
 var mainDiv = document.getElementById('main-button');
