@@ -2166,6 +2166,95 @@ header .overlay {
 
 }
 
+.cases-section {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.cases-section .sec_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.case-card {
+    background-color: #1a1a1a;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    border: 1px solid #333;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.case-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.8);
+    border: 1px solid #fff;
+}
+
+.case-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: #fff;
+}
+
+.case-card .location {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.case-card .case-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.case-card .case-info li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    padding: 0.6rem 0.8rem;
+    background-color: #111;
+    border-radius: 10px;
+    border: 1px solid #222;
+}
+
+.case-card .case-info li .label {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.case-card .case-info li .value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.case-card .case-info li:nth-child(3) .value {
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
 /*new advantages*/
 
 .advantages {
