@@ -32,31 +32,52 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobileNavbar = document.getElementById("mobile_navbar");
 
     const openMenu = () => {
-        mobileNavbar.style.left = "0";
-        document.body.style.overflow = "hidden";
+        if (window.innerWidth <= 992) {
+            mobileNavbar.style.left = "0";
+            document.body.style.overflow = "hidden";
+        }
     };
 
     const closeMenu = () => {
-        mobileNavbar.style.left = "1200px";
-        document.body.style.overflow = "auto";
+        if (window.innerWidth <= 992) {
+            mobileNavbar.style.left = "1200px";
+            document.body.style.overflow = "auto";
+        }
     };
 
-    // Aç
     hamburger.addEventListener("click", openMenu);
-
-    // Bağla
     cancel.addEventListener("click", closeMenu);
 
-    // Kənara klik — bağlanmalıdı
     document.addEventListener("click", (e) => {
-        const clickedInsideMenu = mobileNavbar.contains(e.target);
+        if (window.innerWidth > 992) return;
+
+        const insideMenu = mobileNavbar.contains(e.target);
         const clickedHamburger = e.target === hamburger || hamburger.contains(e.target);
 
-        if (!clickedInsideMenu && !clickedHamburger) {
+        if (!insideMenu && !clickedHamburger) {
             closeMenu();
         }
     });
+
+    // SECTION-lara aparan bütün linklər
+    const menuLinks = document.querySelectorAll("#mobile_navbar .menu-link");
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            closeMenu(); // kliklənən kimi menyu bağlanır
+        });
+    });
+
+    // ekran böyüyəndə menyunu bağla   
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 992) {
+            mobileNavbar.style.left = "1200px";
+            document.body.style.overflow = "auto";
+        }
+    });
 });
+
+
 
 var mainDiv = document.getElementById('main-button');
 mainDiv.addEventListener('click', function () {

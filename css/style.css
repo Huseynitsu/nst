@@ -7,6 +7,11 @@
     list-style: none;
 }
 
+section {
+    scroll-margin-top: 100px;
+    /* header-in hündürlüyünə uyğunlaşdır */
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -2258,7 +2263,7 @@ header .overlay {
 }
 
 .case-card .case-info li .label {
-    color: #aaa;
+    color: #000;
     font-size: 12px;
     font-weight: 500;
 }
