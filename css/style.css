@@ -2200,9 +2200,26 @@ header .overlay {
     transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
     justify-content: space-between;
 }
 
+
+.case-card>p {
+    position: absolute;
+    top: -4px;
+    left: -16px;
+    padding: 16px 40px 12px 32px;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    transform: rotate(-37deg) translate(-9px, -12px);
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
 /* .case-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 35px rgba(0,0,0,0.8);
@@ -2234,7 +2251,8 @@ header .overlay {
     font-size: 1rem;
     margin-bottom: 0.8rem;
     padding: 0.6rem 0.8rem;
-    background-color: #111;
+    background-color: #fff;
+    color: 000;
     border-radius: 10px;
     border: 1px solid #222;
     align-items: center;
@@ -2242,19 +2260,19 @@ header .overlay {
 
 .case-card .case-info li .label {
     color: #aaa;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
 }
 
 .case-card .case-info li .value {
     font-weight: 700;
-    font-size: 1.1rem;
-    color: #fff;
+    font-size: 16px;
+    color: #000;
 }
 
 .case-card .case-info li:nth-child(3) .value {
-    font-size: 1.2rem;
-    color: #fff;
+    font-size: 16px;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
